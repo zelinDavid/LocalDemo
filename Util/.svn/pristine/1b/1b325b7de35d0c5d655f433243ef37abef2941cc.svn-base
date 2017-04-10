@@ -1,0 +1,17 @@
+//
+//  MKMapView+ZoomLevel.h
+//  Devond
+//
+//  Created by Devond on 16/10/9.
+//  Copyright © 2016年 Horace. All rights reserved.
+//
+
+#import <MapKit/MapKit.h>
+
+@interface MKMapView (ZoomLevel)
+
+- (NSUInteger)zoomLevel;
+-(double)zoomScale ;
+- (void)setCenterCoordinate:(CLLocationCoordinate2D)centerCoordinate zoomLevel:(NSUInteger)zoomLevel animated:(BOOL)animated;
+
+@end

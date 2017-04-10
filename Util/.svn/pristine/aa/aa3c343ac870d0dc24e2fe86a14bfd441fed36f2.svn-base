@@ -1,0 +1,13 @@
+//
+//  UIButton+UIButtonImageWithLable.h
+//  demo_oragin
+//
+//  Created by Devond_iOS on 2016/10/25.
+//  Copyright © 2016年 Devond_iOS. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface UIButton (UIButtonImageWithLable)
+-(void)customSetTitle:(NSString *)title forState:(UIControlState) state;
+@end

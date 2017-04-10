@@ -1,0 +1,44 @@
+//
+//  NSTimer+Pause.m
+//  NStimerPause
+//
+//  Created by Devond on 16/1/11.
+//  Copyright © 2016年 CHZ. All rights reserved.
+//
+
+#import "NSTimer+Pause.h"
+
+@implementation NSTimer (Pause)
+
+- (void)pauseNow{
+    if (![self isValid]) {
+        return;
+    }
+    [self setFireDate:[NSDate distantFuture]];
+}
+
+- (void)resumeNow{
+    if (![self isValid]) {
+        return ;
+    }
+    [self setFireDate:[NSDate date]];
+}
+
++ (NSTimer *)weakScheduledTimerWithTimeInterval:(NSTimeInterval)interval block:(void (^)())block repeats:(BOOL)repeats{
+    return [self scheduledTimerWithTimeInterval:interval
+                                         target:self
+                                       selector:@selector(blockInvoke:)
+                                       userInfo:[block copy]
+                                        repeats:repeats];
+}
+
++ (void)blockInvoke:(NSTimer*)timer {
+    void (^block)() = timer.userInfo;
+    if (block) {
+        block();
+    }
+}
+
+
+
+@end

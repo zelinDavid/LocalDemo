@@ -1,0 +1,15 @@
+//
+//  NSBundle+Language.h
+//  obidee
+//
+//  Created by Devond on 2017/1/17.
+//  Copyright © 2017年 Devond. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface NSBundle (Language)
+
++(void)setLanguage:(NSString*)language;
+
+@end

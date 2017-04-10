@@ -1,0 +1,202 @@
+//
+//  UIImage+HZCategory.m
+//  QRScanner
+//
+//  Created by Devond on 16/5/6.
+//  Copyright © 2016年 Devond. All rights reserved.
+//
+
+#import "UIImage+HZCategory.h"
+#import <Foundation/Foundation.h>
+#import <Accelerate/Accelerate.h>
+
+#define carIconSalt [NSString stringWithFormat:@"%@-%@-%@",[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"],[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"],@"carIconSalt"]
+
+@implementation UIImage (HZCategory)
+
+- (UIImage *)roundToSize:(CGSize)size cornerRadius:(CGFloat)cornerRadius{
+    UIGraphicsBeginImageContextWithOptions(size, NO, 0.0);
+    CGRect bounds=(CGRect){CGPointZero,size};
+    [[UIBezierPath bezierPathWithRoundedRect:bounds
+                                cornerRadius:cornerRadius] addClip];
+    [self drawInRect:bounds];
+    UIImage *finalImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return finalImage;
+}
+
+
+- (UIImage *)roundWithCornerRadius:(CGFloat)cornerRadius{
+    UIGraphicsBeginImageContextWithOptions(self.size, NO, 0.0);
+    CGRect bounds=(CGRect){CGPointZero,self.size};
+    [[UIBezierPath bezierPathWithRoundedRect:bounds
+                                cornerRadius:cornerRadius] addClip];
+    [self drawInRect:bounds];
+    UIImage *finalImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return finalImage;
+}
+
+- (UIImage *)resizeToSize:(CGSize)size{
+    UIGraphicsBeginImageContextWithOptions(size, NO, 2.0f);
+    [self drawInRect:CGRectMake(0, 0, size.width, size.height)];
+    UIImage *reSizeImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return reSizeImage;
+}
+
+
+-(UIImage *)resizeWithScale:(CGFloat)scale{
+    CGSize newSize = CGSizeMake(self.size.width *scale, self.size.height *scale);
+    UIGraphicsBeginImageContextWithOptions(newSize, NO, 2.0f);
+    [self drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+    UIImage *reSizeImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return reSizeImage;
+}
+
++ (UIImage *)getMapMarkerSelectImageWithTitle:(NSString *)title isAlarm:(BOOL)isAlarm obdStatus:(int)obdStatus size:(CGSize)size{
+    
+    UIImage *selfImage;
+    NSString *path = @"";
+    
+    if(isAlarm && obdStatus == 0){ // 离线报警
+        selfImage = [UIImage imageNamed:@"carStaticAlarm"];
+        path = [NSString stringWithFormat:@"%@%@%@%@",title,carIconSalt,@"isAlarm=YES",@"obdStatus=NO"];
+    }else if(isAlarm && (obdStatus == 2 || obdStatus == 1)){ //在线报警
+        selfImage = [UIImage imageNamed:@"carMovementAlarm"];
+        path = [NSString stringWithFormat:@"%@%@%@%@",title,carIconSalt,@"isAlarm=YES",@"obdStatus=YES"];
+    }else if (obdStatus == 0 && !isAlarm){ // 离线不报警
+        selfImage = [UIImage imageNamed:@"carStatic"];
+        path = [NSString stringWithFormat:@"%@%@%@%@",title,carIconSalt,@"isAlarm=NO",@"obdStatus=NO"];
+    }else if ((obdStatus == 2 || obdStatus == 1) && !isAlarm){ // 在线不报警
+        selfImage = [UIImage imageNamed:@"carMovement"];
+        path = [NSString stringWithFormat:@"%@%@%@%@",title,carIconSalt,@"isAlarm=NO",@"obdStatus=YES"];
+    }
+    
+    UIFont *font = [UIFont systemFontOfSize:9];
+    CGSize contextSize = size;
+    if ([UIScreen mainScreen].scale == 3) {
+        font = [UIFont systemFontOfSize:10];
+        contextSize = CGSizeMake(67, 47);
+    }else if ([UIScreen mainScreen].scale == 2){
+        font = [UIFont systemFontOfSize:9];
+        contextSize = CGSizeMake(61, 42);
+    }
+    
+    
+    
+    CGSize titleSize = [title sizeWithAttributes:@{
+                                                   NSFontAttributeName : font,
+                                                   NSForegroundColorAttributeName : [UIColor blackColor]
+                                                   }];
+    CGSize titleSettingSize = [@"ABCDEFGH" sizeWithAttributes:@{
+                                                   NSFontAttributeName : font,
+                                                   NSForegroundColorAttributeName : [UIColor blackColor]
+                                                   }];
+    
+    
+//    if(titleSize.width > selfImage.size.width){
+//        contextSize = CGSizeMake(titleSize.width + 10, size.height);
+//    }else{
+//        contextSize = CGSizeMake(selfImage.size.width, size.height);
+//    }
+    
+    
+    NSString *pngPath = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:path];
+    
+    
+    if ([NSData dataWithContentsOfFile:pngPath]) {
+        return [[UIImage imageWithData:[NSData dataWithContentsOfFile:pngPath]] resizeToSize:contextSize] ;
+    }
+    
+    
+    
+    
+    UIGraphicsBeginImageContextWithOptions(contextSize, NO, 2.0f);
+    
+    
+//    CGRect bounds=(CGRect){CGPointZero,size};
+    [selfImage drawInRect:CGRectMake((contextSize.width - selfImage.size.width) * 0.5, (contextSize.height - selfImage.size.height), selfImage.size.width, selfImage.size.height)];
+//    [image drawInRect:CGRectMake(0, 0, contextSize.width, 30)];
+    
+   
+    
+    [title drawInRect:CGRectMake((contextSize.width - titleSize.width) * 0.5 + 0.25, (contextSize.height - titleSize.height)*0.49, titleSettingSize.width, titleSettingSize.height) withAttributes:@{
+                                                                      NSFontAttributeName : font,
+                                                                      NSForegroundColorAttributeName : [UIColor whiteColor]
+                                                                      }];
+
+    UIImage *finalImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+
+    NSData *data = UIImagePNGRepresentation(finalImage);
+    //写入指定路径
+    [data writeToFile:pngPath atomically:YES];
+    
+    UIGraphicsEndImageContext();
+    return finalImage;
+}
+
+-(UIImage*)rotateImagePixelsInRadians:(float)radians
+{
+    /// Create an ARGB bitmap context
+    const size_t width = (size_t)(self.size.width * self.scale);
+    const size_t height = (size_t)(self.size.height * self.scale);
+    const size_t bytesPerRow = width * 4;
+    
+    CGContextRef bmContext = CGBitmapContextCreate(NULL, width, height, 8/*Bits per component*/, bytesPerRow, CGColorSpaceCreateDeviceRGB(), kCGBitmapByteOrderDefault | kCGImageAlphaPremultipliedFirst);
+    
+    if (!bmContext)
+        return nil;
+    
+    /// Draw the image in the bitmap context
+    CGContextDrawImage(bmContext, CGRectMake(0.0f, 0.0f, width, height), self.CGImage);
+    
+    /// Grab the image raw data
+    UInt8* data = (UInt8*)CGBitmapContextGetData(bmContext);
+    if (!data)
+    {
+        CGContextRelease(bmContext);
+        return nil;
+    }
+    
+    vImage_Buffer src = {data, height, width, bytesPerRow};
+    vImage_Buffer dest = {data, height, width, bytesPerRow};
+    Pixel_8888 bgColor = {0, 0, 0, 0};
+    vImageRotate_ARGB8888(&src, &dest, NULL, radians, bgColor, kvImageBackgroundColorFill);
+    
+    CGImageRef rotatedImageRef = CGBitmapContextCreateImage(bmContext);
+    UIImage* rotated = [UIImage imageWithCGImage:rotatedImageRef scale:self.scale orientation:self.imageOrientation];
+    
+    /// Cleanup
+    CGImageRelease(rotatedImageRef);
+    CGContextRelease(bmContext);
+    
+    return rotated;
+}
+
+
++ (UIImage*)getGrayImage:(UIImage*)sourceImage
+{
+    int width = sourceImage.size.width;
+    int height = sourceImage.size.height;
+    
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceGray();
+    CGContextRef context = CGBitmapContextCreate (nil,width,height,8,0,colorSpace,kCGImageAlphaNone);
+    CGColorSpaceRelease(colorSpace);
+    
+    if (context == NULL) {
+        return nil;
+    }
+    
+    CGContextDrawImage(context,CGRectMake(0, 0, width, height), sourceImage.CGImage);
+    CGImageRef grayImageRef = CGBitmapContextCreateImage(context);
+    UIImage *grayImage = [UIImage imageWithCGImage:grayImageRef];
+    CGContextRelease(context);
+    CGImageRelease(grayImageRef);
+    
+    return grayImage;
+}
+
+@end

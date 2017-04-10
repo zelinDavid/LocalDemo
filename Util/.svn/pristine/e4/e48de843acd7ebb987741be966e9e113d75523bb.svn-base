@@ -1,0 +1,141 @@
+//
+//  DVKeyDefine.h
+//  DVBands
+//
+//  Created by Ted on 15/11/15.
+//  Copyright (c) 2015年 Devond. All rights reserved.
+//
+
+#ifndef DVBands_DVKeyDefine_h
+#define DVBands_DVKeyDefine_h
+
+
+#define kFriendsValidation @"FriendsValidation" // 是否需要好友验证
+#define kLicensePlateFind @"LicensePlateFind" // 是否只有通过车牌号才能找到我
+#define kNotAllowedToViewHistory @"NotAllowedToViewHistory" // 非管理人员不可以查看历史记录（会不会太过于权限）
+#define kNotDeleteToViewHistory @"NotDeleteToViewHistory" // 非管理人员不可以删除历史记录
+
+#define kAlarmUpdateTime [NSString stringWithFormat:@"alarmUpdateTime=%ld",[UserManager defaultManager].userID]
+#define kTroubleUpdateTime [NSString stringWithFormat:@"troubleUpdateTime=%ld",[UserManager defaultManager].userID] 
+
+#define kVehicleDelegateNoti @"kVehicleDelegateNoti" // 车辆删除的通知
+#define VehicleAddSuccessNoti @"VehicleAddSuccessNoti"  //车辆添加的通知
+#define VehicleEditSuccessNoti @"VehicleEditSuccessNoti"  //车辆信息修改成后的通知
+
+#define kMarkerSelectImageSize CGSizeMake(51, 27)
+
+#define FirstLaunchKey  @"FirstLaunch"
+
+#define DefaultUserID   @"0"
+
+#define TestServer      @"http://192.168.0.112:5000/v1"
+
+#define LiveServer      @"http://appapi.obd.devondtech.com/v1"
+
+#define shareURL        [NSURL URLWithString:@"http://www.devondtech.com/"]
+#define shareTitle      @"test" // 分享的文本
+
+#define kEditPasswordURL @"http://m.obd.devondtech.com/resetpsw.html"
+
+#define MapTypeKey      @"MapType"
+
+#define APPModelKey     @"APPMode"
+#define UserIDKey       @"SaveUseIDKey"
+#define UserTokenKey    @"UserTokenKey"
+#define UserAccountKey  @"UserAccountKey"
+
+#define MSGTimeStmpKey  @"MSGTimeStmpKey"
+
+#define RemoteNotificationReceived   @"RemoteNotificationReceived"
+
+#define ServiceReplyNotificationReceived   @"ServiceReplyNotificationReceived"
+
+#define MessageNotificationReceived   @"MessageNotificationReceived"
+#define VehicleAlarmNotificationReceived   @"VehicleAlarmNotificationReceived"
+
+
+#define PushTokenKey    @"pushToken"
+
+#define DeviceLocationHasUpdateNotification    @"DeviceLocationHasUpdate"
+
+
+
+#define DeviceIDKey     @"deviceID"
+#define StoreIDKey     @"storeID"
+#define TaxRatioKey    @"taxRatio" // 税率
+#define BadUpdate      @"badUpdate"
+#define SystemUpdate   @"systemUpdate"
+
+#define LoadingAddressKey      @"Loading address..."
+
+#define NOPUSHTOKENKEY        @"NOPUSHTOKEN"
+
+#define UserHeadImageKey @"userHeadImageKey"
+#define UserNickNameKey  @"userNickNameKey"
+#define UserPhoneKey     @"userPhoneKey"
+#define UserCityKey      @"userCityKey"
+#define UserEmailKey      @"userEmailKey"
+#define UserNotifyLevelKey      @"userNotifyLevelKey"
+#define UserAreaCodeKey  @"UserAreaCodeKey"
+#define UserGenderKey    @"userGenderKey"
+#define UserAgeKey    @"userAgeKey"
+
+
+#define LastLoginPhoneKey   @"LastLoginPhoneKey"
+
+#define InformationRemindKey @"InformationRemindKey" //Information模块提醒key
+
+//David添加
+#define      ColorFromRGB(R,G,B,A)    [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A/1.0]
+#define PersonalDataEditName @"PersonalDataEditName"
+#define KmodifyImagePath     [CachePath stringByAppendingPathComponent: [NSString stringWithFormat:@"KmodifyImage%@",[[NSUserDefaults standardUserDefaults]objectForKey:UserIDKey]]]
+
+/// 登录成功时发送的通知
+#define LoginSuccessNoti @"LoginSuccessNoti"
+#define KAlertSound  @"alertSound"
+#define KVibrate  @"vibrate"
+
+#define KRow @"row" //在城市选择里用到的两个key.
+#define KSection @"section"
+#define KFAQ @"FAQ"
+#define KFigureUp(A)       [UIScreen mainScreen].bounds.size.width/375
+#define KRecentlyGoCity   @"recentlyGoCity"
+#define     CachePath    [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)lastObject]
+#define defaultTextColor  RGBFromHex(0x4b5369)
+
+#define AddVehicleNoti @"AddVehicleNoti"
+#define LoadVehicleListSuccessNoti @"loadVehicleListSuccessNoti"
+#define LoadVehicleListFailureNoti @"loadVehicleListFailureNoti"
+#define DidSelectedVehicleNoti @"DidSelectedVehicleNoti" // 选择单个车
+#define DidSelectedAllVehicleNoti @"DidSelectedAllVehicleNoti" // 选择所有的车
+#define SelectedVehicleID  @"SelectedVehicleID" // 选中的车ID
+
+#define KModifyedImagePath  [CachePath stringByAppendingPathComponent: [NSString stringWithFormat:@"KmodifyImage%@",[[NSUserDefaults standardUserDefaults]objectForKey:UserIDKey]]]
+
+#define kNearSearchDoneNoti @"NearSearchDoneNoti"
+
+#define IsTheBossPermissions(level) ((level)>>(0)&1)    // 是否是车主 车辆状态公开权限
+#define AdministratorPrivileges(level) ((level)>>(1)&1) // 是否是管理员权限 车辆状态记录权限
+#define HistoryViewPermissions(level) {(level)>>(2)&1)  // 历史轨迹查看权限
+#define showThisTrack(level,A) ((level)>>(A)&1)  //是否显示此条历史轨迹
+
+#define whetheritIsOpen(level) ((level)>>(0)&1) // 车辆状态公开权限
+#define WhetherTheRecord(level) ((level)>>(1)&1) // 车辆状态记录权限
+
+#define kMapTypeKey   @"MapTypeKey"
+
+#define NYX_DEGREES_TO_RADIANS(__DEGREES) (__DEGREES * 0.017453293) 
+
+#define MapChangedNotificationKey                       @"MapChangedNotificationKey"
+#define MapTypeKey      @"MapType"
+
+#define MapLineGradeGreen              RGBFromHex(0x2AD76C)
+#define MapLineGradeYellow              RGBFromHex(0xFFC600)
+#define MapLineGradRed            RGBFromHex(0xFF3D7A)
+
+#define    DVLocalizedString(Str)      NSLocalizedString(Str, nil)
+
+#define KInvalidMark    -65535
+#define KInvalidTip  @"--"
+
+#endif

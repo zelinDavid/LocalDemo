@@ -1,0 +1,19 @@
+//
+//  PrefixHeader.pch
+//  Origan
+//
+//  Created by LiJiaHuan on 17/3/16.
+//  Copyright © 2017年 David. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//添加的公用方法
+#import "DVBaseDefine.h"
+#import "DVUtil.h"
+#import "UIView+MY.h"
+#import "UIImage+MY.h"
+#import "DVFactory.h"
+
+#endif /* PrefixHeader_pch */

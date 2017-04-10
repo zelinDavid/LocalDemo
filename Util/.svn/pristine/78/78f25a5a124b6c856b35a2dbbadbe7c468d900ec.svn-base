@@ -1,0 +1,47 @@
+//
+//  UIButton+UIButtonImageWithLable.m
+//  demo_oragin
+//
+//  Created by Devond_iOS on 2016/10/25.
+//  Copyright © 2016年 Devond_iOS. All rights reserved.
+//
+
+#import "UIButton+UIButtonImageWithLable.h"
+
+@implementation UIButton (UIButtonImageWithLable)
+
+-(void)customSetTitle:(NSString *)title forState:(UIControlState) state {
+    [self setTitle:title forState:UIControlStateNormal];
+    
+    CGSize textSize = [DVUtil textSizeCalculateFrom:title InWidth:MAXFLOAT FontSize:self.titleLabel.font];
+    self.width = textSize.width+self.imageView.image.size.width+ FitFloat(20);
+    [self layoutImageAndTitle];
+}
+
+-(void)layoutImageAndTitle {    
+    self.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+
+    CGSize titleSize = [DVUtil textSizeCalculateFrom:self.titleLabel.text InWidth:MAXFLOAT FontSize:self.titleLabel.font];
+    
+    
+    CGFloat btnWidth = self.frame.size.width;
+    CGFloat imgWidth = self.imageView.bounds.size.width;
+    CGFloat margin = FitFloat(3);
+    if (titleSize.width > btnWidth - imgWidth - margin) {
+        titleSize.width = btnWidth - imgWidth - margin;
+    }
+    
+    CGFloat titleLeftEdge = (btnWidth - imgWidth - margin)/2 - imgWidth - titleSize.width/2 ;
+    CGFloat imgeLeftEdge = titleLeftEdge + titleSize.width + margin +imgWidth;
+    [self setImageEdgeInsets:UIEdgeInsetsMake(0,
+                                              imgeLeftEdge,
+                                              0.0,
+                                              0.0)];
+    [self setTitleEdgeInsets:UIEdgeInsetsMake(0,
+                                              titleLeftEdge,
+                                              0.0,
+                                              imgWidth + margin)];
+}
+
+
+@end

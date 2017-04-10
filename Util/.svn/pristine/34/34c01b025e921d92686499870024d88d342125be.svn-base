@@ -1,0 +1,188 @@
+//
+//  DVEnumType.h
+//  DVBands
+//
+//  Created by Ted on 15/11/15.
+//  Copyright (c) 2015年 Devond. All rights reserved.
+//
+
+#ifndef DVBands_DVEnumType_h
+#define DVBands_DVEnumType_h
+
+
+typedef NS_ENUM(NSInteger, MapType) {
+    MapTypeGoogleMap = 0,
+    MapTypeAppleMap,
+    MapTypeGaodeMap,
+};
+
+typedef NS_ENUM(NSInteger, LoginType) {
+    LoginTypeInit = 0,
+    LoginTypeRepeat,
+};
+
+typedef NS_ENUM(NSInteger, SignType) {
+    SignTypeRegister = 0,
+    SignTypeModify,
+    SignTypeBindPhone,
+    
+};
+typedef NS_ENUM(NSInteger, APPMode) {
+    APPModeNormal = 0,
+    APPModeTest,
+};
+typedef NS_ENUM(NSInteger, DVAPPLanguage) {
+    DVAPPLanguageChinese = 0,
+    DVAPPLanguageEnglish,
+};
+
+
+typedef NS_ENUM(NSInteger, MessageType) {
+    MessageTypeAll = 0,
+    MessageTypeMSG = 1,
+    MessageTypeFence = 2,
+    MessageTypeSOS = 3,
+};
+
+typedef NS_ENUM(NSInteger, MessageIcon) {
+    MessageIconPlane = 1,
+    MessageIconGether,
+    MessageIconKowTow,
+    MessageIconGetUp,
+    MessageIconMeal,
+    MessageIconSleep,
+};
+
+typedef NS_ENUM(NSInteger, LeftMenuIndex) {
+    LeftMenuHome = 0,
+    LeftMenuProfile,
+    LeftMenuNoti,
+    LeftMenuSetting,
+    LeftMenuAddVehicle,
+};
+
+typedef NS_ENUM(NSInteger, CalloutViewBtnType) {
+    CalloutViewBtnCall = 1,
+    CalloutViewBtnSMS,
+    CalloutViewBtnCurrentLocation,
+    CalloutViewBtnData,
+    CalloutViewBtnIcon,
+};
+
+
+
+typedef NS_ENUM(NSInteger, MessageSendState) {
+    MessageSendStateFailed = 0,
+    MessageSendStateSuccess,    
+};
+
+#pragma mark - David添加
+
+typedef NS_ENUM (NSInteger,HeadBtnType){
+
+    HeadBtnTypePrizeContent,
+    HeadBtnTypeAD,
+};
+
+typedef NS_ENUM (NSInteger,SearchBtnType){
+    SearchBtnTypeCancel = 0,
+    SearchBtnTypeSearch,
+};
+
+typedef NS_ENUM (NSInteger,HomeTableViewCellType){
+    HomeTableViewCellTypeHome = 0,
+    HomeTableViewCellTypeNormal,
+    HomeTableViewCellTypeDelete,
+};
+
+typedef NS_ENUM(NSInteger,ComplaintType) {
+    ComplaintTypeCustomSend = 0, //用户发送的信息
+    ComplaintTypeSystemSend,//系统推送的,
+    ComplaintTypeServiceSend, //客服发送
+};
+
+typedef NS_ENUM(NSInteger,NotificationType) {
+    NotificationTypeServiceReply = 0,//客服留言通知
+  
+};
+typedef NS_ENUM(NSInteger,InsertViewType) {
+    InsertViewTypeFood = 0,
+    InsertViewTypeRank,
+    InsertViewTypeNeighbor,
+};
+//数据库储存标记类型
+typedef NS_ENUM(NSInteger,homeCellModelType) {
+    homeCellModelTypeSearch = 0,
+    homeCellModelTypeHistory,
+    homeCellModelTypeCollection,
+};
+// 评价界面评分按钮类型
+typedef NS_ENUM(NSInteger, EvaluationBtnType) {
+    EvaluationBtnTypeMassing = 0,   //  总体
+    EvaluationBtnTypeTaste, // 口味
+    EvaluationBtnTypeEnvironment, // 环境
+    EvaluationBtnTypeService // 服务
+};
+typedef NS_ENUM(NSInteger,CommodityChangeType) {
+    CommodityChangeTypeAdd = 0,
+    CommodityChangeTypeChange,
+};
+typedef NS_ENUM(NSInteger,ActivityChangeType) {
+   ActivityChangeTypeAdd = 0,
+   ActivityChangeTypeChange,
+};
+typedef NS_ENUM(NSInteger, BusinessAnalysisBtnType) {
+    BusinessAnalysisBtnTypeDaily = 0,
+    BusinessAnalysisBtnTypeWeekly = 1,
+    BusinessAnalysisBtnTypeMonthly = 2,
+    BusinessAnalysisBtnTypeYearly = 3
+};
+typedef NS_ENUM(NSInteger, ActivityChooseTimeType) {
+    ActivityChooseTimeTypeStartTime,
+    ActivityChooseTimeTypeEndTime
+};
+typedef NS_ENUM(NSInteger, currentSelectedCellType) {
+    currentSelectedCellTypeBrand,
+    currentSelectedCellTypeModel,
+    currentSelectedCellTypeConsume,
+    currentSelectedCellTypeAnnualTime,
+    currentSelectedCellTypeBuytime
+};
+///车辆详情里面不同信息的设置type
+typedef NS_ENUM(NSInteger, vehicleSettingDetailsType) {
+    vehicleDetailsTypeBrand  = 0,
+    vehicleDetailsTypeModel  = 1,
+    vehicleDetailsTypeConsum = 2,
+    vehicleDetailsTypeBuyTime = 3,
+    vehicleDetailsTypeOil = 4,
+};
+///车辆详情里面不同信息的设置type
+typedef NS_ENUM(NSInteger, maintainViewDetailsType) {
+    maintainViewDetailsTypeBrakePadChange = 0,
+    maintainViewDetailsTypeOilChange  = 1,
+    maintainViewDetailsTypeWheelChange  = 2,
+    
+};
+///车辆详情里面不同信息的设置type
+typedef NS_ENUM(NSInteger, LiveFromType) {
+   LiveFromTypelistVC,
+    LiveFromTypeHomeVC
+};
+
+typedef NS_ENUM(NSInteger, ElectronicType) {
+    ElectronicTypeAdd,
+    ElectronicTypeModify
+};
+
+typedef NS_ENUM(NSInteger, DrivingAnalysisType) {
+    DrivingAnalysisTypeLast,
+    DrivingAnalysisTypeDate
+};
+
+typedef NS_ENUM(NSInteger, DrivingCalenderType) {
+    DrivingCalenderTypeMonth,
+    DrivingCalenderTypeDay
+};
+
+
+#endif

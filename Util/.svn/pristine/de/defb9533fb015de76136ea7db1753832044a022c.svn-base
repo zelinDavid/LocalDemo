@@ -1,0 +1,37 @@
+//
+//  UIImage+HZCategory.h
+//  QRScanner
+//
+//  Created by Devond on 16/5/6.
+//  Copyright © 2016年 Devond. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+@interface UIImage (HZCategory)
+
+- (UIImage *)roundToSize:(CGSize)size cornerRadius:(CGFloat)cornerRadius;
+
+- (UIImage *)roundWithCornerRadius:(CGFloat)cornerRadius;
+
+- (UIImage *)resizeToSize:(CGSize)size;
+
+- (UIImage *)resizeWithScale:(CGFloat)scale;
+
++ (UIImage*)getGrayImage:(UIImage*)sourceImage;
+
+/**
+ *  获取地图展示带车牌号的图片 (自动缓存了的)
+ *
+ *  @param title 车牌
+ *  @param isAlarm 是否报警
+ *  @param isSelect 是否运动状态
+ *  @param size  需要的图片大小 (可以不给)
+ *
+ *  @return
+ */
++ (UIImage *)getMapMarkerSelectImageWithTitle:(NSString *)title isAlarm:(BOOL)isAlarm obdStatus:(int)obdStatus size:(CGSize)size;
+
+-(UIImage*)rotateImagePixelsInRadians:(float)radians;
+@end
