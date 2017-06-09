@@ -8,13 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2C1815971E7FC0AD00099AFF /* UIView+MY.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1815961E7FC0AD00099AFF /* UIView+MY.m */; };
-		2C18159A1E7FC23300099AFF /* TVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1815991E7FC23300099AFF /* TVViewController.m */; };
 		2C18159D1E7FD1E500099AFF /* OBShapedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C18159C1E7FD1E500099AFF /* OBShapedButton.m */; };
 		2C1815A01E7FD54000099AFF /* UIImage+ColorAtPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C18159F1E7FD54000099AFF /* UIImage+ColorAtPixel.m */; };
 		2C1815A31E7FD71000099AFF /* DVDirectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1815A21E7FD71000099AFF /* DVDirectionView.m */; };
 		2C1815A61E7FDAA900099AFF /* UIImage+MY.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1815A51E7FDAA900099AFF /* UIImage+MY.m */; };
-		2C411C251E94FA72001039D0 /* DVDeviceListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C411C241E94FA72001039D0 /* DVDeviceListModel.m */; };
-		2C507B141E8CE69100BD54E6 /* DVDeviceCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C507B131E8CE69100BD54E6 /* DVDeviceCollectionVC.m */; };
 		2C507B1B1E8CF0BA00BD54E6 /* C29S.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C507B151E8CF0BA00BD54E6 /* C29S.png */; };
 		2C507B1C1E8CF0BA00BD54E6 /* C29S@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C507B161E8CF0BA00BD54E6 /* C29S@2x.png */; };
 		2C507B1D1E8CF0BA00BD54E6 /* C29S@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C507B171E8CF0BA00BD54E6 /* C29S@3x.png */; };
@@ -209,8 +206,6 @@
 		2C8A28DE1E820DC300E94F10 /* 数字背景.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8A28DB1E820DC300E94F10 /* 数字背景.png */; };
 		2C8A28DF1E820DC300E94F10 /* 数字背景@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8A28DC1E820DC300E94F10 /* 数字背景@2x.png */; };
 		2C8A28E01E820DC300E94F10 /* 数字背景@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8A28DD1E820DC300E94F10 /* 数字背景@3x.png */; };
-		2C8A28E31E82282700E94F10 /* TVNumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8A28E21E82282700E94F10 /* TVNumViewController.m */; };
-		2C9233391E949B78000E5135 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9233381E949B78000E5135 /* TestView.m */; };
 		2C9DA6311E71260800892D9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9DA6301E71260800892D9A /* main.m */; };
 		2C9DA6341E71260800892D9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9DA6331E71260800892D9A /* AppDelegate.m */; };
 		2C9DA6371E71260800892D9A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9DA6361E71260800892D9A /* ViewController.m */; };
@@ -218,20 +213,47 @@
 		2C9DA63C1E71260800892D9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C9DA63B1E71260800892D9A /* Assets.xcassets */; };
 		2C9DA63F1E71260800892D9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C9DA63D1E71260800892D9A /* LaunchScreen.storyboard */; };
 		2CC4A1221E89FA5B00AC1614 /* DVFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC4A1211E89FA5B00AC1614 /* DVFactory.m */; };
-		2CCAC4BA1E80C35F00571BCC /* DVCustomBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCAC4B91E80C35F00571BCC /* DVCustomBtnView.m */; };
-		2CCAC4C61E8103A800571BCC /* SwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCAC4C51E8103A800571BCC /* SwitchView.m */; };
-		2CCAC4CA1E8110FE00571BCC /* AirConditionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCAC4C91E8110FE00571BCC /* AirConditionVC.m */; };
-		2CCAC4D31E81177C00571BCC /* AirPresentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCAC4D21E81177C00571BCC /* AirPresentView.m */; };
 		2CCAC6551E81328E00571BCC /* DVCustomBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCAC6541E81328E00571BCC /* DVCustomBtn.m */; };
 		2CE0C6491E7A73DF007507F3 /* DVUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C6381E7A73DF007507F3 /* DVUtil.m */; };
+		6348ABD01EA8B57300D46B67 /* APWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6348ABCF1EA8B57300D46B67 /* APWaveView.m */; };
+		635146731EEA2E98008FF153 /* 我的01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 635146661EEA2E98008FF153 /* 我的01@2x.png */; };
+		635146741EEA2E98008FF153 /* 我的01@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 635146671EEA2E98008FF153 /* 我的01@3x.png */; };
+		635146751EEA2E98008FF153 /* 我的02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 635146681EEA2E98008FF153 /* 我的02@2x.png */; };
+		635146761EEA2E98008FF153 /* 我的02@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 635146691EEA2E98008FF153 /* 我的02@3x.png */; };
+		635146771EEA2E98008FF153 /* 效果图01.png in Resources */ = {isa = PBXBuildFile; fileRef = 6351466A1EEA2E98008FF153 /* 效果图01.png */; };
+		635146781EEA2E98008FF153 /* 消息中心01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6351466B1EEA2E98008FF153 /* 消息中心01@2x.png */; };
+		635146791EEA2E98008FF153 /* 消息中心01@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6351466C1EEA2E98008FF153 /* 消息中心01@3x.png */; };
+		6351467A1EEA2E98008FF153 /* 消息中心02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6351466D1EEA2E98008FF153 /* 消息中心02@2x.png */; };
+		6351467B1EEA2E98008FF153 /* 消息中心02@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6351466E1EEA2E98008FF153 /* 消息中心02@3x.png */; };
+		6351467C1EEA2E98008FF153 /* 消息中心03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6351466F1EEA2E98008FF153 /* 消息中心03@2x.png */; };
+		6351467D1EEA2E98008FF153 /* 消息中心03@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 635146701EEA2E98008FF153 /* 消息中心03@3x.png */; };
+		6351467E1EEA2E98008FF153 /* 首页@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 635146711EEA2E98008FF153 /* 首页@2x.png */; };
+		6351467F1EEA2E98008FF153 /* 首页@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 635146721EEA2E98008FF153 /* 首页@3x.png */; };
+		635146821EEA3017008FF153 /* 椭圆@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 635146801EEA3017008FF153 /* 椭圆@2x.png */; };
+		635146831EEA3017008FF153 /* 椭圆@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 635146811EEA3017008FF153 /* 椭圆@3x.png */; };
+		635146A41EEA46EE008FF153 /* DWTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6351469F1EEA46EE008FF153 /* DWTabBarController.m */; };
+		635146A51EEA46EE008FF153 /* DWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 635146A11EEA46EE008FF153 /* DWTabBar.m */; };
+		635146A61EEA46EE008FF153 /* DWPublishButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 635146A31EEA46EE008FF153 /* DWPublishButton.m */; };
+		635146AF1EEA4735008FF153 /* DWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 635146A81EEA4735008FF153 /* DWHomeViewController.m */; };
+		635146B01EEA4735008FF153 /* DWMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 635146AA1EEA4735008FF153 /* DWMessageViewController.m */; };
+		635146B11EEA4735008FF153 /* DWMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 635146AC1EEA4735008FF153 /* DWMineViewController.m */; };
+		635146B21EEA4735008FF153 /* DWSameFityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 635146AE1EEA4735008FF153 /* DWSameFityViewController.m */; };
+		6352342F1EE52D2900062507 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6352342C1EE52D2900062507 /* SVProgressHUD.bundle */; };
+		635234301EE52D2900062507 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6352342E1EE52D2900062507 /* SVProgressHUD.m */; };
+		63ACF1A01EBB285C00078DCA /* DVWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63ACF19F1EBB285C00078DCA /* DVWebViewController.m */; };
+		63C1BF751EA5F9BC007B0CDD /* APICommon.mm in Sources */ = {isa = PBXBuildFile; fileRef = 63C1BF741EA5F9BC007B0CDD /* APICommon.mm */; };
+		63C840691EC2E4F900470A39 /* DVTelNotifyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C840681EC2E4F900470A39 /* DVTelNotifyVC.m */; };
+		63C8406C1EC2ED0800470A39 /* DVEmailNotifyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C8406B1EC2ED0800470A39 /* DVEmailNotifyVC.m */; };
+		63FFE3251ED6717000227E79 /* 去设置_英@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FFE3211ED6717000227E79 /* 去设置_英@2x.png */; };
+		63FFE3261ED6717000227E79 /* 去设置_英@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FFE3221ED6717000227E79 /* 去设置_英@3x.png */; };
+		63FFE3271ED6717000227E79 /* 去设置_中@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FFE3231ED6717000227E79 /* 去设置_中@2x.png */; };
+		63FFE3281ED6717000227E79 /* 去设置_中@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FFE3241ED6717000227E79 /* 去设置_中@3x.png */; };
 		B92A62756C05AC7B0C393128 /* libPods-Origan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B369C19B908504ED80C81EFB /* libPods-Origan.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2C1815951E7FC0AD00099AFF /* UIView+MY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MY.h"; sourceTree = "<group>"; };
 		2C1815961E7FC0AD00099AFF /* UIView+MY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MY.m"; sourceTree = "<group>"; };
-		2C1815981E7FC23300099AFF /* TVViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVViewController.h; sourceTree = "<group>"; };
-		2C1815991E7FC23300099AFF /* TVViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVViewController.m; sourceTree = "<group>"; };
 		2C18159B1E7FD1E500099AFF /* OBShapedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBShapedButton.h; sourceTree = "<group>"; };
 		2C18159C1E7FD1E500099AFF /* OBShapedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBShapedButton.m; sourceTree = "<group>"; };
 		2C18159E1E7FD54000099AFF /* UIImage+ColorAtPixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorAtPixel.h"; sourceTree = "<group>"; };
@@ -240,10 +262,6 @@
 		2C1815A21E7FD71000099AFF /* DVDirectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DVDirectionView.m; path = ../Origan/DVDirectionView.m; sourceTree = "<group>"; };
 		2C1815A41E7FDAA900099AFF /* UIImage+MY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+MY.h"; path = "../Origan/UIImage+MY.h"; sourceTree = "<group>"; };
 		2C1815A51E7FDAA900099AFF /* UIImage+MY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MY.m"; path = "../Origan/UIImage+MY.m"; sourceTree = "<group>"; };
-		2C411C231E94FA72001039D0 /* DVDeviceListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVDeviceListModel.h; sourceTree = "<group>"; };
-		2C411C241E94FA72001039D0 /* DVDeviceListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVDeviceListModel.m; sourceTree = "<group>"; };
-		2C507B121E8CE69100BD54E6 /* DVDeviceCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVDeviceCollectionVC.h; sourceTree = "<group>"; };
-		2C507B131E8CE69100BD54E6 /* DVDeviceCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVDeviceCollectionVC.m; sourceTree = "<group>"; };
 		2C507B151E8CF0BA00BD54E6 /* C29S.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = C29S.png; sourceTree = "<group>"; };
 		2C507B161E8CF0BA00BD54E6 /* C29S@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "C29S@2x.png"; sourceTree = "<group>"; };
 		2C507B171E8CF0BA00BD54E6 /* C29S@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "C29S@3x.png"; sourceTree = "<group>"; };
@@ -438,10 +456,6 @@
 		2C8A28DB1E820DC300E94F10 /* 数字背景.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "数字背景.png"; sourceTree = "<group>"; };
 		2C8A28DC1E820DC300E94F10 /* 数字背景@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "数字背景@2x.png"; sourceTree = "<group>"; };
 		2C8A28DD1E820DC300E94F10 /* 数字背景@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "数字背景@3x.png"; sourceTree = "<group>"; };
-		2C8A28E11E82282700E94F10 /* TVNumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVNumViewController.h; sourceTree = "<group>"; };
-		2C8A28E21E82282700E94F10 /* TVNumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVNumViewController.m; sourceTree = "<group>"; };
-		2C9233371E949B78000E5135 /* TestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
-		2C9233381E949B78000E5135 /* TestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
 		2C9DA62C1E71260800892D9A /* Origan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Origan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C9DA6301E71260800892D9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2C9DA6321E71260800892D9A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -454,14 +468,6 @@
 		2C9DA6401E71260800892D9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CC4A1201E89FA5B00AC1614 /* DVFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVFactory.h; sourceTree = "<group>"; };
 		2CC4A1211E89FA5B00AC1614 /* DVFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVFactory.m; sourceTree = "<group>"; };
-		2CCAC4B81E80C35F00571BCC /* DVCustomBtnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DVCustomBtnView.h; path = ../Util/DVCustomBtnView.h; sourceTree = "<group>"; };
-		2CCAC4B91E80C35F00571BCC /* DVCustomBtnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DVCustomBtnView.m; path = ../Util/DVCustomBtnView.m; sourceTree = "<group>"; };
-		2CCAC4C41E8103A800571BCC /* SwitchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchView.h; sourceTree = "<group>"; };
-		2CCAC4C51E8103A800571BCC /* SwitchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchView.m; sourceTree = "<group>"; };
-		2CCAC4C81E8110FE00571BCC /* AirConditionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirConditionVC.h; sourceTree = "<group>"; };
-		2CCAC4C91E8110FE00571BCC /* AirConditionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirConditionVC.m; sourceTree = "<group>"; };
-		2CCAC4D11E81177C00571BCC /* AirPresentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirPresentView.h; sourceTree = "<group>"; };
-		2CCAC4D21E81177C00571BCC /* AirPresentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirPresentView.m; sourceTree = "<group>"; };
 		2CCAC6531E81328E00571BCC /* DVCustomBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVCustomBtn.h; sourceTree = "<group>"; };
 		2CCAC6541E81328E00571BCC /* DVCustomBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVCustomBtn.m; sourceTree = "<group>"; };
 		2CE0C6341E7A73DF007507F3 /* DVBaseDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVBaseDefine.h; sourceTree = "<group>"; };
@@ -469,6 +475,52 @@
 		2CE0C6381E7A73DF007507F3 /* DVUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVUtil.m; sourceTree = "<group>"; };
 		2CE0C64A1E7A7440007507F3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		54FF35DBFD99A73584EAA1DF /* Pods-Origan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Origan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Origan/Pods-Origan.debug.xcconfig"; sourceTree = "<group>"; };
+		6348ABCE1EA8B56D00D46B67 /* APWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APWaveView.h; sourceTree = "<group>"; };
+		6348ABCF1EA8B57300D46B67 /* APWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APWaveView.m; sourceTree = "<group>"; };
+		635146661EEA2E98008FF153 /* 我的01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的01@2x.png"; sourceTree = "<group>"; };
+		635146671EEA2E98008FF153 /* 我的01@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的01@3x.png"; sourceTree = "<group>"; };
+		635146681EEA2E98008FF153 /* 我的02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的02@2x.png"; sourceTree = "<group>"; };
+		635146691EEA2E98008FF153 /* 我的02@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的02@3x.png"; sourceTree = "<group>"; };
+		6351466A1EEA2E98008FF153 /* 效果图01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "效果图01.png"; sourceTree = "<group>"; };
+		6351466B1EEA2E98008FF153 /* 消息中心01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "消息中心01@2x.png"; sourceTree = "<group>"; };
+		6351466C1EEA2E98008FF153 /* 消息中心01@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "消息中心01@3x.png"; sourceTree = "<group>"; };
+		6351466D1EEA2E98008FF153 /* 消息中心02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "消息中心02@2x.png"; sourceTree = "<group>"; };
+		6351466E1EEA2E98008FF153 /* 消息中心02@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "消息中心02@3x.png"; sourceTree = "<group>"; };
+		6351466F1EEA2E98008FF153 /* 消息中心03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "消息中心03@2x.png"; sourceTree = "<group>"; };
+		635146701EEA2E98008FF153 /* 消息中心03@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "消息中心03@3x.png"; sourceTree = "<group>"; };
+		635146711EEA2E98008FF153 /* 首页@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页@2x.png"; sourceTree = "<group>"; };
+		635146721EEA2E98008FF153 /* 首页@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页@3x.png"; sourceTree = "<group>"; };
+		635146801EEA3017008FF153 /* 椭圆@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "椭圆@2x.png"; sourceTree = "<group>"; };
+		635146811EEA3017008FF153 /* 椭圆@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "椭圆@3x.png"; sourceTree = "<group>"; };
+		6351469E1EEA46EE008FF153 /* DWTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWTabBarController.h; sourceTree = "<group>"; };
+		6351469F1EEA46EE008FF153 /* DWTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWTabBarController.m; sourceTree = "<group>"; };
+		635146A01EEA46EE008FF153 /* DWTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWTabBar.h; sourceTree = "<group>"; };
+		635146A11EEA46EE008FF153 /* DWTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWTabBar.m; sourceTree = "<group>"; };
+		635146A21EEA46EE008FF153 /* DWPublishButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWPublishButton.h; sourceTree = "<group>"; };
+		635146A31EEA46EE008FF153 /* DWPublishButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWPublishButton.m; sourceTree = "<group>"; };
+		635146A71EEA4735008FF153 /* DWHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWHomeViewController.h; sourceTree = "<group>"; };
+		635146A81EEA4735008FF153 /* DWHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWHomeViewController.m; sourceTree = "<group>"; };
+		635146A91EEA4735008FF153 /* DWMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWMessageViewController.h; sourceTree = "<group>"; };
+		635146AA1EEA4735008FF153 /* DWMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWMessageViewController.m; sourceTree = "<group>"; };
+		635146AB1EEA4735008FF153 /* DWMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWMineViewController.h; sourceTree = "<group>"; };
+		635146AC1EEA4735008FF153 /* DWMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWMineViewController.m; sourceTree = "<group>"; };
+		635146AD1EEA4735008FF153 /* DWSameFityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWSameFityViewController.h; sourceTree = "<group>"; };
+		635146AE1EEA4735008FF153 /* DWSameFityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWSameFityViewController.m; sourceTree = "<group>"; };
+		6352342C1EE52D2900062507 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		6352342D1EE52D2900062507 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		6352342E1EE52D2900062507 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		63ACF19E1EBB285C00078DCA /* DVWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVWebViewController.h; sourceTree = "<group>"; };
+		63ACF19F1EBB285C00078DCA /* DVWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVWebViewController.m; sourceTree = "<group>"; };
+		63C1BF731EA5F9BC007B0CDD /* APICommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APICommon.h; sourceTree = "<group>"; };
+		63C1BF741EA5F9BC007B0CDD /* APICommon.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = APICommon.mm; sourceTree = "<group>"; };
+		63C840671EC2E4F900470A39 /* DVTelNotifyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTelNotifyVC.h; sourceTree = "<group>"; };
+		63C840681EC2E4F900470A39 /* DVTelNotifyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVTelNotifyVC.m; sourceTree = "<group>"; };
+		63C8406A1EC2ED0800470A39 /* DVEmailNotifyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVEmailNotifyVC.h; sourceTree = "<group>"; };
+		63C8406B1EC2ED0800470A39 /* DVEmailNotifyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVEmailNotifyVC.m; sourceTree = "<group>"; };
+		63FFE3211ED6717000227E79 /* 去设置_英@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "去设置_英@2x.png"; sourceTree = "<group>"; };
+		63FFE3221ED6717000227E79 /* 去设置_英@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "去设置_英@3x.png"; sourceTree = "<group>"; };
+		63FFE3231ED6717000227E79 /* 去设置_中@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "去设置_中@2x.png"; sourceTree = "<group>"; };
+		63FFE3241ED6717000227E79 /* 去设置_中@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "去设置_中@3x.png"; sourceTree = "<group>"; };
 		B369C19B908504ED80C81EFB /* libPods-Origan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Origan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A248F3FDDD5F50CEC398ED /* Pods-Origan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Origan.release.xcconfig"; path = "Pods/Target Support Files/Pods-Origan/Pods-Origan.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -820,6 +872,7 @@
 		2C9DA6231E71260800892D9A = {
 			isa = PBXGroup;
 			children = (
+				63C1BF721EA5F9BC007B0CDD /* APICommon */,
 				2CE0C6141E7A73DF007507F3 /* Util */,
 				2C9DA62E1E71260800892D9A /* Origan */,
 				2C9DA62D1E71260800892D9A /* Products */,
@@ -839,18 +892,17 @@
 		2C9DA62E1E71260800892D9A /* Origan */ = {
 			isa = PBXGroup;
 			children = (
+				63FFE3211ED6717000227E79 /* 去设置_英@2x.png */,
+				63FFE3221ED6717000227E79 /* 去设置_英@3x.png */,
+				63FFE3231ED6717000227E79 /* 去设置_中@2x.png */,
+				63FFE3241ED6717000227E79 /* 去设置_中@3x.png */,
 				2C9DA6321E71260800892D9A /* AppDelegate.h */,
 				2C9DA6331E71260800892D9A /* AppDelegate.m */,
 				2C9DA6351E71260800892D9A /* ViewController.h */,
 				2C9DA6361E71260800892D9A /* ViewController.m */,
-				2C9233371E949B78000E5135 /* TestView.h */,
-				2C9233381E949B78000E5135 /* TestView.m */,
-				2C507B121E8CE69100BD54E6 /* DVDeviceCollectionVC.h */,
-				2C507B131E8CE69100BD54E6 /* DVDeviceCollectionVC.m */,
-				2C411C231E94FA72001039D0 /* DVDeviceListModel.h */,
-				2C411C241E94FA72001039D0 /* DVDeviceListModel.m */,
-				2CCAC4C71E810E7500571BCC /* airCondition */,
-				2CCAC4C31E81029600571BCC /* TVView */,
+				635146641EEA2E78008FF153 /* CustomTabbar */,
+				63B605ED1ECC4D4000CC3379 /* Befor */,
+				63C0D8441EC54D08004D103C /* Alarm */,
 				2C9DA6381E71260800892D9A /* Main.storyboard */,
 				2C9DA63B1E71260800892D9A /* Assets.xcassets */,
 				2C9DA63D1E71260800892D9A /* LaunchScreen.storyboard */,
@@ -875,35 +927,10 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		2CCAC4C31E81029600571BCC /* TVView */ = {
-			isa = PBXGroup;
-			children = (
-				2C1815981E7FC23300099AFF /* TVViewController.h */,
-				2C1815991E7FC23300099AFF /* TVViewController.m */,
-				2CCAC4B81E80C35F00571BCC /* DVCustomBtnView.h */,
-				2CCAC4B91E80C35F00571BCC /* DVCustomBtnView.m */,
-				2C8A28E11E82282700E94F10 /* TVNumViewController.h */,
-				2C8A28E21E82282700E94F10 /* TVNumViewController.m */,
-				2CCAC4C41E8103A800571BCC /* SwitchView.h */,
-				2CCAC4C51E8103A800571BCC /* SwitchView.m */,
-			);
-			name = TVView;
-			sourceTree = "<group>";
-		};
-		2CCAC4C71E810E7500571BCC /* airCondition */ = {
-			isa = PBXGroup;
-			children = (
-				2CCAC4C81E8110FE00571BCC /* AirConditionVC.h */,
-				2CCAC4C91E8110FE00571BCC /* AirConditionVC.m */,
-				2CCAC4D11E81177C00571BCC /* AirPresentView.h */,
-				2CCAC4D21E81177C00571BCC /* AirPresentView.m */,
-			);
-			name = airCondition;
-			sourceTree = "<group>";
-		};
 		2CE0C6141E7A73DF007507F3 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				6352342B1EE52D2900062507 /* SVProgressHUD */,
 				2C8A275B1E820ACF00E94F10 /* iOS */,
 				2C1815A81E7FDFEE00099AFF /* DirectionView */,
 				2CE0C6341E7A73DF007507F3 /* DVBaseDefine.h */,
@@ -916,6 +943,91 @@
 				2CCAC6541E81328E00571BCC /* DVCustomBtn.m */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		635146641EEA2E78008FF153 /* CustomTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				6351469E1EEA46EE008FF153 /* DWTabBarController.h */,
+				6351469F1EEA46EE008FF153 /* DWTabBarController.m */,
+				635146A01EEA46EE008FF153 /* DWTabBar.h */,
+				635146A11EEA46EE008FF153 /* DWTabBar.m */,
+				635146A21EEA46EE008FF153 /* DWPublishButton.h */,
+				635146A31EEA46EE008FF153 /* DWPublishButton.m */,
+				635146651EEA2E98008FF153 /* iOS(2) */,
+			);
+			name = CustomTabbar;
+			sourceTree = "<group>";
+		};
+		635146651EEA2E98008FF153 /* iOS(2) */ = {
+			isa = PBXGroup;
+			children = (
+				635146A71EEA4735008FF153 /* DWHomeViewController.h */,
+				635146A81EEA4735008FF153 /* DWHomeViewController.m */,
+				635146A91EEA4735008FF153 /* DWMessageViewController.h */,
+				635146AA1EEA4735008FF153 /* DWMessageViewController.m */,
+				635146AB1EEA4735008FF153 /* DWMineViewController.h */,
+				635146AC1EEA4735008FF153 /* DWMineViewController.m */,
+				635146AD1EEA4735008FF153 /* DWSameFityViewController.h */,
+				635146AE1EEA4735008FF153 /* DWSameFityViewController.m */,
+				635146801EEA3017008FF153 /* 椭圆@2x.png */,
+				635146811EEA3017008FF153 /* 椭圆@3x.png */,
+				635146661EEA2E98008FF153 /* 我的01@2x.png */,
+				635146671EEA2E98008FF153 /* 我的01@3x.png */,
+				635146681EEA2E98008FF153 /* 我的02@2x.png */,
+				635146691EEA2E98008FF153 /* 我的02@3x.png */,
+				6351466A1EEA2E98008FF153 /* 效果图01.png */,
+				6351466B1EEA2E98008FF153 /* 消息中心01@2x.png */,
+				6351466C1EEA2E98008FF153 /* 消息中心01@3x.png */,
+				6351466D1EEA2E98008FF153 /* 消息中心02@2x.png */,
+				6351466E1EEA2E98008FF153 /* 消息中心02@3x.png */,
+				6351466F1EEA2E98008FF153 /* 消息中心03@2x.png */,
+				635146701EEA2E98008FF153 /* 消息中心03@3x.png */,
+				635146711EEA2E98008FF153 /* 首页@2x.png */,
+				635146721EEA2E98008FF153 /* 首页@3x.png */,
+			);
+			path = "iOS(2)";
+			sourceTree = "<group>";
+		};
+		6352342B1EE52D2900062507 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				6352342C1EE52D2900062507 /* SVProgressHUD.bundle */,
+				6352342D1EE52D2900062507 /* SVProgressHUD.h */,
+				6352342E1EE52D2900062507 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		63B605ED1ECC4D4000CC3379 /* Befor */ = {
+			isa = PBXGroup;
+			children = (
+				6348ABCE1EA8B56D00D46B67 /* APWaveView.h */,
+				6348ABCF1EA8B57300D46B67 /* APWaveView.m */,
+				63ACF19E1EBB285C00078DCA /* DVWebViewController.h */,
+				63ACF19F1EBB285C00078DCA /* DVWebViewController.m */,
+			);
+			name = Befor;
+			sourceTree = "<group>";
+		};
+		63C0D8441EC54D08004D103C /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				63C8406A1EC2ED0800470A39 /* DVEmailNotifyVC.h */,
+				63C8406B1EC2ED0800470A39 /* DVEmailNotifyVC.m */,
+				63C840671EC2E4F900470A39 /* DVTelNotifyVC.h */,
+				63C840681EC2E4F900470A39 /* DVTelNotifyVC.m */,
+			);
+			name = Alarm;
+			sourceTree = "<group>";
+		};
+		63C1BF721EA5F9BC007B0CDD /* APICommon */ = {
+			isa = PBXGroup;
+			children = (
+				63C1BF731EA5F9BC007B0CDD /* APICommon.h */,
+				63C1BF741EA5F9BC007B0CDD /* APICommon.mm */,
+			);
+			path = APICommon;
 			sourceTree = "<group>";
 		};
 		CA3B32EED9653463BC40246A /* Frameworks */ = {
@@ -960,6 +1072,7 @@
 				TargetAttributes = {
 					2C9DA62B1E71260800892D9A = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9XGDE5JWD8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -994,6 +1107,7 @@
 				2C8A282C1E820ACF00E94F10 /* 123---01@3x.png in Resources */,
 				2C8A282F1E820ACF00E94F10 /* 减01@3x.png in Resources */,
 				2C8A28801E820ACF00E94F10 /* 202@3x.png in Resources */,
+				6351467A1EEA2E98008FF153 /* 消息中心02@2x.png in Resources */,
 				2C8A28AA1E820ACF00E94F10 /* OK02@3x.png in Resources */,
 				2C8A28371E820ACF00E94F10 /* 向下01@2x.png in Resources */,
 				2C8A28841E820ACF00E94F10 /* 402.png in Resources */,
@@ -1005,6 +1119,7 @@
 				2C8A28BD1E820ACF00E94F10 /* 返回02.png in Resources */,
 				2C8A28471E820ACF00E94F10 /* 左01@3x.png in Resources */,
 				2C507B1F1E8CF0BA00BD54E6 /* C34S-X4@2x.png in Resources */,
+				635146781EEA2E98008FF153 /* 消息中心01@2x.png in Resources */,
 				2C8A28631E820ACF00E94F10 /* 5.png in Resources */,
 				2C8A28871E820ACF00E94F10 /* 502.png in Resources */,
 				2C8A28AB1E820ACF00E94F10 /* 上02.png in Resources */,
@@ -1020,6 +1135,7 @@
 				2C8A28A11E820ACF00E94F10 /* 加02@3x.png in Resources */,
 				2C8A28711E820ACF00E94F10 /* 9@3x.png in Resources */,
 				2C8A28941E820ACF00E94F10 /* 902@2x.png in Resources */,
+				6351467E1EEA2E98008FF153 /* 首页@2x.png in Resources */,
 				2C8A28B31E820ACF00E94F10 /* 右02@3x.png in Resources */,
 				2C8A28A51E820ACF00E94F10 /* 向下02.png in Resources */,
 				2C8A289D1E820ACF00E94F10 /* 减02@2x.png in Resources */,
@@ -1034,6 +1150,7 @@
 				2C8A28C21E820ACF00E94F10 /* 电视02.png in Resources */,
 				2C8A282B1E820ACF00E94F10 /* 123---01@2x.png in Resources */,
 				2C8A28C81E820ACF00E94F10 /* 编辑.png in Resources */,
+				6352342F1EE52D2900062507 /* SVProgressHUD.bundle in Resources */,
 				2C8A28901E820ACF00E94F10 /* 802.png in Resources */,
 				2C8A28721E820ACF00E94F10 /* numOk.png in Resources */,
 				2C8A28961E820ACF00E94F10 /* numOk02.png in Resources */,
@@ -1045,6 +1162,7 @@
 				2C8A28951E820ACF00E94F10 /* 902@3x.png in Resources */,
 				2C8A28B41E820ACF00E94F10 /* 左02.png in Resources */,
 				2C8A284B1E820ACF00E94F10 /* 菜单01.png in Resources */,
+				635146751EEA2E98008FF153 /* 我的02@2x.png in Resources */,
 				2C8A28751E820ACF00E94F10 /* 02----.png in Resources */,
 				2C8A28831E820ACF00E94F10 /* 302@3x.png in Resources */,
 				2C8A285A1E820ACF00E94F10 /* 2.png in Resources */,
@@ -1055,6 +1173,8 @@
 				2C8A28A21E820ACF00E94F10 /* 向上02.png in Resources */,
 				2C8A28651E820ACF00E94F10 /* 5@3x.png in Resources */,
 				2C8A28231E820ACF00E94F10 /* 电源（已关闭）@3x.png in Resources */,
+				635146821EEA3017008FF153 /* 椭圆@2x.png in Resources */,
+				635146831EEA3017008FF153 /* 椭圆@3x.png in Resources */,
 				2C8A288A1E820ACF00E94F10 /* 602.png in Resources */,
 				2C8A285E1E820ACF00E94F10 /* 3@2x.png in Resources */,
 				2C8A282E1E820ACF00E94F10 /* 减01@2x.png in Resources */,
@@ -1071,13 +1191,16 @@
 				2C8A28621E820ACF00E94F10 /* 4@3x.png in Resources */,
 				2C8A28881E820ACF00E94F10 /* 502@2x.png in Resources */,
 				2C8A284C1E820ACF00E94F10 /* 菜单01@2x.png in Resources */,
+				63FFE3251ED6717000227E79 /* 去设置_英@2x.png in Resources */,
 				2C8A28C01E820ACF00E94F10 /* 电视(已关闭).png in Resources */,
 				2C8A28CB1E820ACF00E94F10 /* 返回.png in Resources */,
 				2C8A283D1E820ACF00E94F10 /* 上01@2x.png in Resources */,
 				2C8A284D1E820ACF00E94F10 /* 菜单01@3x.png in Resources */,
 				2C8A285C1E820ACF00E94F10 /* 2@3x.png in Resources */,
 				2C8A28441E820ACF00E94F10 /* 右01@3x.png in Resources */,
+				63FFE3261ED6717000227E79 /* 去设置_英@3x.png in Resources */,
 				2C8A28DE1E820DC300E94F10 /* 数字背景.png in Resources */,
+				6351467D1EEA2E98008FF153 /* 消息中心03@3x.png in Resources */,
 				2C8A28BF1E820ACF00E94F10 /* 返回02@3x.png in Resources */,
 				2C8A28BB1E820ACF00E94F10 /* 菜单02@2x.png in Resources */,
 				2C8A28381E820ACF00E94F10 /* 向下01@3x.png in Resources */,
@@ -1086,11 +1209,13 @@
 				2C8A28D71E820ACF00E94F10 /* 静音开02.png in Resources */,
 				2C8A28391E820ACF00E94F10 /* OK01.png in Resources */,
 				2C8A28821E820ACF00E94F10 /* 302@2x.png in Resources */,
+				6351467F1EEA2E98008FF153 /* 首页@3x.png in Resources */,
 				2C8A28D51E820ACF00E94F10 /* 静音开01@2x.png in Resources */,
 				2C8A285B1E820ACF00E94F10 /* 2@2x.png in Resources */,
 				2C8A28A31E820ACF00E94F10 /* 向上02@2x.png in Resources */,
 				2C8A28731E820ACF00E94F10 /* numOk@2x.png in Resources */,
 				2C8A289C1E820ACF00E94F10 /* 减02.png in Resources */,
+				635146761EEA2E98008FF153 /* 我的02@3x.png in Resources */,
 				2C8A28421E820ACF00E94F10 /* 右01.png in Resources */,
 				2C8A28661E820ACF00E94F10 /* 6.png in Resources */,
 				2C8A28AF1E820ACF00E94F10 /* 下02@2x.png in Resources */,
@@ -1126,25 +1251,31 @@
 				2C8A28BE1E820ACF00E94F10 /* 返回02@2x.png in Resources */,
 				2C8A28C61E820ACF00E94F10 /* 矩形-3@2x.png in Resources */,
 				2C8A286B1E820ACF00E94F10 /* 7@3x.png in Resources */,
+				6351467B1EEA2E98008FF153 /* 消息中心02@3x.png in Resources */,
 				2C8A28681E820ACF00E94F10 /* 6@3x.png in Resources */,
+				6351467C1EEA2E98008FF153 /* 消息中心03@2x.png in Resources */,
 				2C8A28851E820ACF00E94F10 /* 402@2x.png in Resources */,
 				2C8A289B1E820ACF00E94F10 /* 123---02@3x.png in Resources */,
 				2C8A289F1E820ACF00E94F10 /* 加02.png in Resources */,
 				2C8A28671E820ACF00E94F10 /* 6@2x.png in Resources */,
 				2C8A28791E820ACF00E94F10 /* 0202@2x.png in Resources */,
+				635146731EEA2E98008FF153 /* 我的01@2x.png in Resources */,
 				2C8A28C31E820ACF00E94F10 /* 电视04.png in Resources */,
 				2C8A288E1E820ACF00E94F10 /* 702@2x.png in Resources */,
 				2C8A28891E820ACF00E94F10 /* 502@3x.png in Resources */,
+				635146771EEA2E98008FF153 /* 效果图01.png in Resources */,
 				2C8A286A1E820ACF00E94F10 /* 7@2x.png in Resources */,
 				2C8A28281E820ACF00E94F10 /* 电源（待关闭）@2x.png in Resources */,
 				2C8A28D41E820ACF00E94F10 /* 静音开01.png in Resources */,
 				2C8A28551E820ACF00E94F10 /* 0@2x.png in Resources */,
 				2C8A284A1E820ACF00E94F10 /* 信号源01@3x.png in Resources */,
 				2C8A28CD1E820ACF00E94F10 /* 返回@3x.png in Resources */,
+				63FFE3271ED6717000227E79 /* 去设置_中@2x.png in Resources */,
 				2C8A28A61E820ACF00E94F10 /* 向下02@2x.png in Resources */,
 				2C8A28B21E820ACF00E94F10 /* 右02@2x.png in Resources */,
 				2C8A28C11E820ACF00E94F10 /* 电视01.png in Resources */,
 				2C8A28921E820ACF00E94F10 /* 802@3x.png in Resources */,
+				635146741EEA2E98008FF153 /* 我的01@3x.png in Resources */,
 				2C8A28B81E820ACF00E94F10 /* 信号源02@2x.png in Resources */,
 				2C8A28211E820ACF00E94F10 /* 电源（已关闭）.png in Resources */,
 				2C507B1C1E8CF0BA00BD54E6 /* C29S@2x.png in Resources */,
@@ -1153,6 +1284,7 @@
 				2C8A28561E820ACF00E94F10 /* 0@3x.png in Resources */,
 				2C8A286F1E820ACF00E94F10 /* 9.png in Resources */,
 				2C8A28BA1E820ACF00E94F10 /* 菜单02.png in Resources */,
+				635146791EEA2E98008FF153 /* 消息中心01@3x.png in Resources */,
 				2C8A28B91E820ACF00E94F10 /* 信号源02@3x.png in Resources */,
 				2C9DA63A1E71260800892D9A /* Main.storyboard in Resources */,
 				2C8A284E1E820ACF00E94F10 /* 返回01.png in Resources */,
@@ -1165,6 +1297,7 @@
 				2C8A28411E820ACF00E94F10 /* 下01@3x.png in Resources */,
 				2C8A28361E820ACF00E94F10 /* 向下01.png in Resources */,
 				2C8A28341E820ACF00E94F10 /* 向上01@2x.png in Resources */,
+				63FFE3281ED6717000227E79 /* 去设置_中@3x.png in Resources */,
 				2C8A28611E820ACF00E94F10 /* 4@2x.png in Resources */,
 				2C8A28811E820ACF00E94F10 /* 302.png in Resources */,
 				2C8A28AE1E820ACF00E94F10 /* 下02.png in Resources */,
@@ -1242,25 +1375,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				635146A51EEA46EE008FF153 /* DWTabBar.m in Sources */,
+				635146B21EEA4735008FF153 /* DWSameFityViewController.m in Sources */,
 				2C1815A31E7FD71000099AFF /* DVDirectionView.m in Sources */,
+				63ACF1A01EBB285C00078DCA /* DVWebViewController.m in Sources */,
 				2CCAC6551E81328E00571BCC /* DVCustomBtn.m in Sources */,
-				2CCAC4BA1E80C35F00571BCC /* DVCustomBtnView.m in Sources */,
 				2C18159D1E7FD1E500099AFF /* OBShapedButton.m in Sources */,
-				2C8A28E31E82282700E94F10 /* TVNumViewController.m in Sources */,
-				2C507B141E8CE69100BD54E6 /* DVDeviceCollectionVC.m in Sources */,
 				2C1815971E7FC0AD00099AFF /* UIView+MY.m in Sources */,
+				635234301EE52D2900062507 /* SVProgressHUD.m in Sources */,
+				63C1BF751EA5F9BC007B0CDD /* APICommon.mm in Sources */,
 				2C9DA6371E71260800892D9A /* ViewController.m in Sources */,
+				635146B01EEA4735008FF153 /* DWMessageViewController.m in Sources */,
+				635146B11EEA4735008FF153 /* DWMineViewController.m in Sources */,
 				2C1815A01E7FD54000099AFF /* UIImage+ColorAtPixel.m in Sources */,
-				2C411C251E94FA72001039D0 /* DVDeviceListModel.m in Sources */,
+				635146A61EEA46EE008FF153 /* DWPublishButton.m in Sources */,
+				6348ABD01EA8B57300D46B67 /* APWaveView.m in Sources */,
+				635146A41EEA46EE008FF153 /* DWTabBarController.m in Sources */,
 				2C1815A61E7FDAA900099AFF /* UIImage+MY.m in Sources */,
-				2CCAC4C61E8103A800571BCC /* SwitchView.m in Sources */,
-				2C9233391E949B78000E5135 /* TestView.m in Sources */,
+				63C8406C1EC2ED0800470A39 /* DVEmailNotifyVC.m in Sources */,
 				2CC4A1221E89FA5B00AC1614 /* DVFactory.m in Sources */,
-				2C18159A1E7FC23300099AFF /* TVViewController.m in Sources */,
-				2CCAC4CA1E8110FE00571BCC /* AirConditionVC.m in Sources */,
+				63C840691EC2E4F900470A39 /* DVTelNotifyVC.m in Sources */,
 				2CE0C6491E7A73DF007507F3 /* DVUtil.m in Sources */,
 				2C9DA6341E71260800892D9A /* AppDelegate.m in Sources */,
-				2CCAC4D31E81177C00571BCC /* AirPresentView.m in Sources */,
+				635146AF1EEA4735008FF153 /* DWHomeViewController.m in Sources */,
 				2C9DA6311E71260800892D9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1383,13 +1520,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = TC973ZGWG3;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9XGDE5JWD8;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/admin/Desktop/UIDemo/Origan/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/admin/Desktop/LocalDemo/Origan/PrefixHeader.pch;
 				INFOPLIST_FILE = Origan/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = David.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Eye4.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1400,13 +1538,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = TC973ZGWG3;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9XGDE5JWD8;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/admin/Desktop/UIDemo/Origan/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/admin/Desktop/LocalDemo/Origan/PrefixHeader.pch;
 				INFOPLIST_FILE = Origan/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = David.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Eye4.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
