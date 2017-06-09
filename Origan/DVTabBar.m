@@ -1,29 +1,22 @@
-//
-//  DWTabBar.m
-//  DWCustomTabBarDemo
-//
-//  Created by Damon on 10/20/15.
-//  Copyright © 2015 damonwong. All rights reserved.
-//
+ 
 
-#import "DWTabBar.h"
+#import "DVTabBar.h"
 
 
-#define ButtonNumber 3
 
 
-@interface DWTabBar ()
+@interface DVTabBar ()
 
 
 @end
 
-@implementation DWTabBar
+@implementation DVTabBar
 
 -(instancetype)initWithFrame:(CGRect)frame{
     
     if (self = [super initWithFrame:frame]) {
         
-        DWPublishButton *button = [DWPublishButton publishButton];
+        DVPublishButton *button = [DVPublishButton publishButton];
         [self addSubview:button];
         self.publishButton = button;
     
@@ -44,7 +37,7 @@
     CGFloat barWidth = self.frame.size.width;
     CGFloat barHeight = self.frame.size.height;
     
-    CGFloat buttonW = barWidth / ButtonNumber;
+    CGFloat buttonW = barWidth / 3;
     CGFloat buttonH = barHeight - 2;
     CGFloat buttonY = 1;
     

@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
-#import "DWTabBarController.h"
+#import "DVTabBarController.h"
 @interface AppDelegate ()
 
 @end
@@ -21,7 +21,7 @@
     
  
     
-    DWTabBarController *vc = [[DWTabBarController alloc]init];
+    DVTabBarController *vc = [[DVTabBarController alloc]init];
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
     

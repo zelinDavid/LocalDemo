@@ -1,28 +1,22 @@
-//
-//  DWTabBarController.m
-//  DWCustomTabBarDemo
-//
-//  Created by Damon on 10/20/15.
-//  Copyright © 2015 damonwong. All rights reserved.
-//
+ 
 
-#import "DWTabBarController.h"
+#import "DVTabBarController.h"
 
 #import "DWHomeViewController.h"
 #import "DWMessageViewController.h"
 #import "DWMineViewController.h"
 #import "DWSameFityViewController.h"
 
-#import "DWTabBar.h"
+#import "DVTabBar.h"
 
-#define DWColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0] //<<< 用10进制表示颜色，例如（255,255,255）黑色
-#define DWRandomColor DWColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+#define DVColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0] //<<< 用10进制表示颜色，例如（255,255,255）黑色
+#define DVRandomColor DVColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
 
-@interface DWTabBarController()<UITabBarDelegate>
+@interface DVTabBarController()<UITabBarDelegate>
 
 
 @end
-@implementation DWTabBarController {
+@implementation DVTabBarController {
     UIButton *_midBtn;
 }
 
@@ -49,7 +43,7 @@
     [[UITabBar appearance] setShadowImage:[[UIImage alloc] init]];
     
     //设置导航控制器颜色为黄色
-    [[UINavigationBar appearance] setBackgroundImage:[self imageWithColor:DWColor(253, 218, 68)] forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setBackgroundImage:[self imageWithColor:DVColor(253, 218, 68)] forBarMetrics:UIBarMetricsDefault];
 
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(selectMideBtn) name:@"ssss" object:nil];
     
@@ -79,7 +73,7 @@
  *  利用 KVC 把 系统的 tabBar 类型改为自定义类型。
  */
 - (void)setUpTabBar{
-    DWTabBar *tabbar = [[DWTabBar alloc] init];
+    DVTabBar *tabbar = [[DVTabBar alloc] init];
     _midBtn = tabbar.publishButton;
     [self setValue:tabbar forKey:@"tabBar"];
 
@@ -129,8 +123,7 @@
 
 - (void)addOneChildViewController:(UIViewController *)viewController WithTitle:(NSString *)title imageName:(NSString *)imageName selectedImageName:(NSString *)selectedImageName{
     
-    viewController.view.backgroundColor     = DWRandomColor;
-    viewController.tabBarItem.title         = title;
+     viewController.tabBarItem.title         = title;
     viewController.tabBarItem.image         = [UIImage imageNamed:imageName];
     UIImage *image = [UIImage imageNamed:selectedImageName];
     image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];

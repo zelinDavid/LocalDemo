@@ -1,12 +1,12 @@
 
 
-#import "DWPublishButton.h"
+#import "DVPublishButton.h"
 
-@interface DWPublishButton ()<UIActionSheetDelegate>
+@interface DVPublishButton ()<UIActionSheetDelegate>
 
 @end
 
-@implementation DWPublishButton
+@implementation DVPublishButton
 
 
 #pragma mark -
@@ -56,7 +56,7 @@
 
 +(instancetype)publishButton{
     
-    DWPublishButton *button = [[DWPublishButton alloc]init];
+    DVPublishButton *button = [[DVPublishButton alloc]init];
     
 
     [button setTitle:@"首页" forState:UIControlStateNormal];

@@ -1,0 +1,113 @@
+//
+//  STQRCodeController.m
+//  STQRCodeController
+//
+//  Created by ST on 16/11/28.
+//  Copyright © 2016年 ST. All rights reserved.
+//
+
+#import <AVFoundation/AVFoundation.h>
+#import <AudioToolbox/AudioToolbox.h>
+
+#import "STQRCodeController.h"
+#import "STQRCodeReaderView.h"
+#import "STQRCodeAlert.h"
+#import "NSBundle+STQRCodeController.h"
+#import "SVProgressHUD.h"
+
+
+@interface STQRCodeController ()<STQRCodeReaderViewDelegate,AVCaptureMetadataOutputObjectsDelegate,UIAlertViewDelegate>
+/** 1.读取二维码界面 */
+@property(nonatomic, strong)STQRCodeReaderView *readview;
+/** 2.图片探测器 */
+@property(nonatomic, strong)CIDetector *detector;
+@property(nonatomic, copy) NSString *resultStr;
+
+@end
+
+@implementation STQRCodeController
+
+#pragma mark - --- 1.init 生命周期 ---
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    // 1.设置标题和背景色
+    self.view.backgroundColor = [UIColor whiteColor];
+     [self.view addSubview:self.readview];
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [self authorizationStatus];
+}
+
+- (void)authorizationStatus{
+    NSString *mediaType = AVMediaTypeVideo;
+    AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:mediaType];
+    if (authStatus == AVAuthorizationStatusAuthorized) {
+        [self.readview startScan];
+    }else if(authStatus == AVAuthorizationStatusNotDetermined){
+        [NSTimer scheduledTimerWithTimeInterval:0.2 target:self selector:@selector(observeAuthrizationStatusChange:) userInfo:nil repeats:YES];
+    }else{
+        [STQRCodeAlert showWithTitle:NSLocalizedStringFromTable(@"CameraPermisson", @STR_LOCALIZED_FILE_NAME, nil)];
+        [self.readview stopScan];
+    }
+}
+
+- (void)observeAuthrizationStatusChange:(NSTimer *)sender{
+    NSString *mediaType = AVMediaTypeVideo;
+    AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:mediaType];
+    if (authStatus == AVAuthorizationStatusAuthorized) {
+        [sender invalidate];
+        [self.readview startScan];
+    }
+}
+
+#pragma mark - --- STQRCodeReaderView Delegate
+
+- (void)qrcodeReaderView:(STQRCodeReaderView *)qrcodeReaderView readerScanResult:(NSString *)readerScanResult
+{
+   //  1.播放提示音
+    SystemSoundID soundID;
+    NSString *strSoundFile = [[NSBundle st_qrcodeControllerBundle] pathForResource:@"st_noticeMusic" ofType:@"wav"];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath:strSoundFile],&soundID);
+    AudioServicesPlaySystemSound(soundID);
+    
+//     2.显示扫描结果信息
+//    [STQRCodeAlert showWithTitle:readerScanResult];
+    [SVProgressHUD show];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        if ([self.delegate respondsToSelector:@selector(qrcodeController:readerScanResult:type:)]) {
+            [self.delegate qrcodeController:self readerScanResult:readerScanResult type:STQRCodeResultTypeSuccess];
+            //        [self dismissViewControllerAnimated:YES completion:^{}];
+        }
+        [SVProgressHUD  dismiss];
+    });
+   
+
+ 
+}
+
+
+#pragma  mark - 懒加载
+- (STQRCodeReaderView *)readview
+{
+    if (!_readview) {
+        _readview = [[STQRCodeReaderView alloc]init];
+        _readview.delegate = self;
+    }
+    return _readview;
+}
+
+- (CIDetector *)detector
+{
+    if (!_detector) {
+        _detector = [CIDetector detectorOfType:CIDetectorTypeQRCode context:nil options:@{ CIDetectorAccuracy : CIDetectorAccuracyHigh }];
+    }
+    return _detector;
+}
+@end
+

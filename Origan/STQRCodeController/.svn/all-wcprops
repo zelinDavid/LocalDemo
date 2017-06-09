@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/ios_eye4/!svn/ver/1886/Eye4_4.0YW/Eye4/Sections/HomePage/Controller/AddCamera/STQRCodeController
+END
+STQRCodeAlert.h
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/ios_eye4/!svn/ver/1882/Eye4_4.0YW/Eye4/Sections/HomePage/Controller/AddCamera/STQRCodeController/STQRCodeAlert.h
+END
+STQRCodeController.m
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/ios_eye4/!svn/ver/1894/Eye4_4.0YW/Eye4/Sections/HomePage/Controller/AddCamera/STQRCodeController/STQRCodeController.m
+END
+NSBundle+STQRCodeController.h
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/ios_eye4/!svn/ver/1882/Eye4_4.0YW/Eye4/Sections/HomePage/Controller/AddCamera/STQRCodeController/NSBundle+STQRCodeController.h
+END
+STQRCodeAlert.m
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/ios_eye4/!svn/ver/1882/Eye4_4.0YW/Eye4/Sections/HomePage/Controller/AddCamera/STQRCodeController/STQRCodeAlert.m
+END
+STQRCodeReaderView.h
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/ios_eye4/!svn/ver/1882/Eye4_4.0YW/Eye4/Sections/HomePage/Controller/AddCamera/STQRCodeController/STQRCodeReaderView.h
+END
+NSBundle+STQRCodeController.m
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/ios_eye4/!svn/ver/1882/Eye4_4.0YW/Eye4/Sections/HomePage/Controller/AddCamera/STQRCodeController/NSBundle+STQRCodeController.m
+END
+STQRCodeReaderView.m
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/ios_eye4/!svn/ver/1896/Eye4_4.0YW/Eye4/Sections/HomePage/Controller/AddCamera/STQRCodeController/STQRCodeReaderView.m
+END
+STQRCodeController.h
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/ios_eye4/!svn/ver/1882/Eye4_4.0YW/Eye4/Sections/HomePage/Controller/AddCamera/STQRCodeController/STQRCodeController.h
+END

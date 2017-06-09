@@ -231,9 +231,9 @@
 		6351467F1EEA2E98008FF153 /* 首页@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 635146721EEA2E98008FF153 /* 首页@3x.png */; };
 		635146821EEA3017008FF153 /* 椭圆@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 635146801EEA3017008FF153 /* 椭圆@2x.png */; };
 		635146831EEA3017008FF153 /* 椭圆@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 635146811EEA3017008FF153 /* 椭圆@3x.png */; };
-		635146A41EEA46EE008FF153 /* DWTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6351469F1EEA46EE008FF153 /* DWTabBarController.m */; };
-		635146A51EEA46EE008FF153 /* DWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 635146A11EEA46EE008FF153 /* DWTabBar.m */; };
-		635146A61EEA46EE008FF153 /* DWPublishButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 635146A31EEA46EE008FF153 /* DWPublishButton.m */; };
+		635146A41EEA46EE008FF153 /* DVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6351469F1EEA46EE008FF153 /* DVTabBarController.m */; };
+		635146A51EEA46EE008FF153 /* DVTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 635146A11EEA46EE008FF153 /* DVTabBar.m */; };
+		635146A61EEA46EE008FF153 /* DVPublishButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 635146A31EEA46EE008FF153 /* DVPublishButton.m */; };
 		635146AF1EEA4735008FF153 /* DWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 635146A81EEA4735008FF153 /* DWHomeViewController.m */; };
 		635146B01EEA4735008FF153 /* DWMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 635146AA1EEA4735008FF153 /* DWMessageViewController.m */; };
 		635146B11EEA4735008FF153 /* DWMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 635146AC1EEA4735008FF153 /* DWMineViewController.m */; };
@@ -492,12 +492,12 @@
 		635146721EEA2E98008FF153 /* 首页@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页@3x.png"; sourceTree = "<group>"; };
 		635146801EEA3017008FF153 /* 椭圆@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "椭圆@2x.png"; sourceTree = "<group>"; };
 		635146811EEA3017008FF153 /* 椭圆@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "椭圆@3x.png"; sourceTree = "<group>"; };
-		6351469E1EEA46EE008FF153 /* DWTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWTabBarController.h; sourceTree = "<group>"; };
-		6351469F1EEA46EE008FF153 /* DWTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWTabBarController.m; sourceTree = "<group>"; };
-		635146A01EEA46EE008FF153 /* DWTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWTabBar.h; sourceTree = "<group>"; };
-		635146A11EEA46EE008FF153 /* DWTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWTabBar.m; sourceTree = "<group>"; };
-		635146A21EEA46EE008FF153 /* DWPublishButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWPublishButton.h; sourceTree = "<group>"; };
-		635146A31EEA46EE008FF153 /* DWPublishButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWPublishButton.m; sourceTree = "<group>"; };
+		6351469E1EEA46EE008FF153 /* DVTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTabBarController.h; sourceTree = "<group>"; };
+		6351469F1EEA46EE008FF153 /* DVTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVTabBarController.m; sourceTree = "<group>"; };
+		635146A01EEA46EE008FF153 /* DVTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTabBar.h; sourceTree = "<group>"; };
+		635146A11EEA46EE008FF153 /* DVTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVTabBar.m; sourceTree = "<group>"; };
+		635146A21EEA46EE008FF153 /* DVPublishButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVPublishButton.h; sourceTree = "<group>"; };
+		635146A31EEA46EE008FF153 /* DVPublishButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVPublishButton.m; sourceTree = "<group>"; };
 		635146A71EEA4735008FF153 /* DWHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWHomeViewController.h; sourceTree = "<group>"; };
 		635146A81EEA4735008FF153 /* DWHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWHomeViewController.m; sourceTree = "<group>"; };
 		635146A91EEA4735008FF153 /* DWMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWMessageViewController.h; sourceTree = "<group>"; };
@@ -948,12 +948,12 @@
 		635146641EEA2E78008FF153 /* CustomTabbar */ = {
 			isa = PBXGroup;
 			children = (
-				6351469E1EEA46EE008FF153 /* DWTabBarController.h */,
-				6351469F1EEA46EE008FF153 /* DWTabBarController.m */,
-				635146A01EEA46EE008FF153 /* DWTabBar.h */,
-				635146A11EEA46EE008FF153 /* DWTabBar.m */,
-				635146A21EEA46EE008FF153 /* DWPublishButton.h */,
-				635146A31EEA46EE008FF153 /* DWPublishButton.m */,
+				6351469E1EEA46EE008FF153 /* DVTabBarController.h */,
+				6351469F1EEA46EE008FF153 /* DVTabBarController.m */,
+				635146A01EEA46EE008FF153 /* DVTabBar.h */,
+				635146A11EEA46EE008FF153 /* DVTabBar.m */,
+				635146A21EEA46EE008FF153 /* DVPublishButton.h */,
+				635146A31EEA46EE008FF153 /* DVPublishButton.m */,
 				635146651EEA2E98008FF153 /* iOS(2) */,
 			);
 			name = CustomTabbar;
@@ -1375,7 +1375,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				635146A51EEA46EE008FF153 /* DWTabBar.m in Sources */,
+				635146A51EEA46EE008FF153 /* DVTabBar.m in Sources */,
 				635146B21EEA4735008FF153 /* DWSameFityViewController.m in Sources */,
 				2C1815A31E7FD71000099AFF /* DVDirectionView.m in Sources */,
 				63ACF1A01EBB285C00078DCA /* DVWebViewController.m in Sources */,
@@ -1388,9 +1388,9 @@
 				635146B01EEA4735008FF153 /* DWMessageViewController.m in Sources */,
 				635146B11EEA4735008FF153 /* DWMineViewController.m in Sources */,
 				2C1815A01E7FD54000099AFF /* UIImage+ColorAtPixel.m in Sources */,
-				635146A61EEA46EE008FF153 /* DWPublishButton.m in Sources */,
+				635146A61EEA46EE008FF153 /* DVPublishButton.m in Sources */,
 				6348ABD01EA8B57300D46B67 /* APWaveView.m in Sources */,
-				635146A41EEA46EE008FF153 /* DWTabBarController.m in Sources */,
+				635146A41EEA46EE008FF153 /* DVTabBarController.m in Sources */,
 				2C1815A61E7FDAA900099AFF /* UIImage+MY.m in Sources */,
 				63C8406C1EC2ED0800470A39 /* DVEmailNotifyVC.m in Sources */,
 				2CC4A1221E89FA5B00AC1614 /* DVFactory.m in Sources */,
