@@ -28,25 +28,24 @@
     [self.view addSubview:label];
     
     
-    ViewController *vvv =[[ViewController alloc]init];
-    [self addChildViewController:vvv];
-    [vvv didMoveToParentViewController:self];
-    vvv.view.frame = CGRectMake(0, 0, 100, 200);
-    vvv.view.backgroundColor =  [UIColor blackColor];
-    [self.view addSubview:vvv.view];
-    _first = vvv;
-    _currentVC = _first;
-    vvv.view.hidden = NO;
-    
-    TestViewController *test =[[TestViewController alloc]init];
-    [self addChildViewController:test];
-    [test didMoveToParentViewController:self];
-    test.view.frame = CGRectMake(200, 200, 100, 200);
-    test.view.backgroundColor =  [UIColor orangeColor];
-    [self.view addSubview:test.view];
-    _second = test;
-    vvv.view.hidden = YES;
-
+//    ViewController *vvv =[[ViewController alloc]init];
+//    [self addChildViewController:vvv];
+//    [vvv didMoveToParentViewController:self];
+//    vvv.view.frame = CGRectMake(0, 0, 100, 200);
+//    vvv.view.backgroundColor =  [UIColor blackColor];
+//    [self.view addSubview:vvv.view];
+//    _first = vvv;
+//    _currentVC = _first;
+//    vvv.view.hidden = NO;
+//    
+//    TestViewController *test =[[TestViewController alloc]init];
+//    [self addChildViewController:test];
+//    [test didMoveToParentViewController:self];
+//    test.view.frame = CGRectMake(200, 200, 100, 200);
+//    test.view.backgroundColor =  [UIColor orangeColor];
+//    [self.view addSubview:test.view];
+//    _second = test;
+//    vvv.view.hidden = YES;
 }
 
 
@@ -79,13 +78,24 @@
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    if (_currentVC == _first) {
-        [self switchController:_currentVC newController:_second];
-    }else {
-        [self switchController:_currentVC newController:_first];
-
-    }
-
+    ViewController *vvv =[[ViewController alloc]init];
+    [self addChildViewController:vvv];
+    [vvv didMoveToParentViewController:self];
+    vvv.view.frame =  self.view.bounds;
+    vvv.view.backgroundColor =  [UIColor blackColor];
+    vvv.view.alpha = 0;
+    [self.view addSubview:vvv.view];
+    _first = vvv;
+    _currentVC = _first;
+    vvv.view.hidden = NO;
+    DVNavigationController *nav = self.navigationController;
+    nav.orietation = 1;
+    [self.tabBarController.tabBar setHidden:YES];
+    
+    [UIView animateWithDuration:0.2 animations:^{
+        vvv.view.alpha = 1;
+    }];
+    
 }
 
  

@@ -14,6 +14,8 @@
 #import "TestViewController.h"
 
 @interface ViewController ()
+@property (nonatomic, assign)BOOL back;
+@property(nonatomic, strong) UIButton *btn;
 
 @end
 
@@ -27,15 +29,21 @@
     UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
     label.text = @"viewController";
     [self.view addSubview:label];
-    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 200, 200)];
-    [btn addTarget:self action:@selector(ffffff) forControlEvents:UIControlEventTouchUpInside];
+    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 100, 200)];
+    [btn addTarget:self action:@selector(fffff) forControlEvents:UIControlEventTouchUpInside];
+    _btn = btn;
     [self.view addSubview:btn];
     [btn setBackgroundColor:[UIColor blueColor]];
     
 }
 
--(void)ffffff {
-    
+-(void)fffff {
+    [self.view removeFromSuperview];
+    [JHRotatoUtil forceOrientation: UIInterfaceOrientationPortrait];
+    _back = YES;
+    DVNavigationController *nav  = self.navigationController;
+    nav.orietation = 0;
+
 }
 
 
@@ -49,7 +57,7 @@
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
     [super viewWillTransitionToSize:size withTransitionCoordinator: coordinator];
     // 监察者将执行： 1.旋转前的动作  2.旋转后的动作（completion）
-    [coordinator animateAlongsideTransition: ^(id<UIViewControllerTransitionCoordinatorContext> context)
+   BOOL tem =  [coordinator animateAlongsideTransition: ^(id<UIViewControllerTransitionCoordinatorContext> context)
      {
          if ([JHRotatoUtil isOrientationLandscape]) {
               [self p_prepareFullScreen];
@@ -58,21 +66,63 @@
              [self p_prepareSmallScreen];
          }
      } completion: ^(id<UIViewControllerTransitionCoordinatorContext> context) {
+         
+        
      }];
+    if (tem) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            if (_back== NO) {
+                return ;
+            }
+            [self.view removeFromSuperview];
+            [self didMoveToParentViewController:nil];
+            
+        });
+    }
     
 }
+
+- (void)preferredContentSizeDidChangeForChildContentContainer:(id <UIContentContainer>)container {
+//    if (_back) {
+//        [UIView animateWithDuration:0.2 animations:^{
+//            self.view.alpha = 0;
+//        }completion:^(BOOL finished) {
+//            [self.view removeFromSuperview];
+//            [self didMoveToParentViewController:nil];
+//        }];
+//        
+//    }
+}
+
+
+
+//-(BOOL)shouldAutorotate {
+//    //    if ([NSStringFromClass([self.topViewController class]) isEqualToString:@"ViewController"]) {
+//    //        return YES ;
+//    //    }
+//    //    return NO;
+//    return YES;
+//}
+//
+//-(UIInterfaceOrientationMask)supportedInterfaceOrientations {
+//    return UIInterfaceOrientationMaskAll;
+//
+//}
 
 
 #pragma mark - Private
 
 // 切换成全屏的准备工作
 - (void)p_prepareFullScreen {
-  
+    _btn.width = 300;
+    _btn.height = 400;
+    
 }
 
 // 切换成小屏的准备工作
 - (void)p_prepareSmallScreen {
-    
+    _btn.width = 100;
+    _btn.height = 200;
 }
 
 

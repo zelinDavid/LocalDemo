@@ -73,7 +73,10 @@
 }
 
 -(UIInterfaceOrientationMask)supportedInterfaceOrientations {
-    if ([NSStringFromClass([self.topViewController class]) isEqualToString:@"ViewController"]) {
+//    if ([NSStringFromClass([self.topViewController class]) isEqualToString:@"ViewController"]) {
+//        return UIInterfaceOrientationMaskAll;
+//    }
+    if (_orietation) {
         return UIInterfaceOrientationMaskAll;
     }
     return UIInterfaceOrientationMaskPortrait;
