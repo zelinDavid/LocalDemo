@@ -215,6 +215,9 @@
 		2CC4A1221E89FA5B00AC1614 /* DVFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC4A1211E89FA5B00AC1614 /* DVFactory.m */; };
 		2CCAC6551E81328E00571BCC /* DVCustomBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCAC6541E81328E00571BCC /* DVCustomBtn.m */; };
 		2CE0C6491E7A73DF007507F3 /* DVUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0C6381E7A73DF007507F3 /* DVUtil.m */; };
+		6300EB0F1EF3C76200CA7B01 /* iOS消息通知方式（俄语）.png in Resources */ = {isa = PBXBuildFile; fileRef = 6300EB0E1EF3C76200CA7B01 /* iOS消息通知方式（俄语）.png */; };
+		6300EB121EF7B0B700CA7B01 /* DVNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6300EB111EF7B0B700CA7B01 /* DVNavigationController.m */; };
+		6300EB151EF7D9A700CA7B01 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6300EB141EF7D9A700CA7B01 /* TestViewController.m */; };
 		6348ABD01EA8B57300D46B67 /* APWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6348ABCF1EA8B57300D46B67 /* APWaveView.m */; };
 		635146731EEA2E98008FF153 /* 我的01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 635146661EEA2E98008FF153 /* 我的01@2x.png */; };
 		635146741EEA2E98008FF153 /* 我的01@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 635146671EEA2E98008FF153 /* 我的01@3x.png */; };
@@ -244,6 +247,7 @@
 		63C1BF751EA5F9BC007B0CDD /* APICommon.mm in Sources */ = {isa = PBXBuildFile; fileRef = 63C1BF741EA5F9BC007B0CDD /* APICommon.mm */; };
 		63C840691EC2E4F900470A39 /* DVTelNotifyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C840681EC2E4F900470A39 /* DVTelNotifyVC.m */; };
 		63C8406C1EC2ED0800470A39 /* DVEmailNotifyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C8406B1EC2ED0800470A39 /* DVEmailNotifyVC.m */; };
+		63E026911EF9020300E7B4DB /* JHRotatoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E026901EF9020300E7B4DB /* JHRotatoUtil.m */; };
 		63FFE3251ED6717000227E79 /* 去设置_英@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FFE3211ED6717000227E79 /* 去设置_英@2x.png */; };
 		63FFE3261ED6717000227E79 /* 去设置_英@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FFE3221ED6717000227E79 /* 去设置_英@3x.png */; };
 		63FFE3271ED6717000227E79 /* 去设置_中@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FFE3231ED6717000227E79 /* 去设置_中@2x.png */; };
@@ -475,6 +479,11 @@
 		2CE0C6381E7A73DF007507F3 /* DVUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVUtil.m; sourceTree = "<group>"; };
 		2CE0C64A1E7A7440007507F3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		54FF35DBFD99A73584EAA1DF /* Pods-Origan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Origan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Origan/Pods-Origan.debug.xcconfig"; sourceTree = "<group>"; };
+		6300EB0E1EF3C76200CA7B01 /* iOS消息通知方式（俄语）.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS消息通知方式（俄语）.png"; sourceTree = "<group>"; };
+		6300EB101EF7B0B700CA7B01 /* DVNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVNavigationController.h; sourceTree = "<group>"; };
+		6300EB111EF7B0B700CA7B01 /* DVNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVNavigationController.m; sourceTree = "<group>"; };
+		6300EB131EF7D9A700CA7B01 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		6300EB141EF7D9A700CA7B01 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		6348ABCE1EA8B56D00D46B67 /* APWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APWaveView.h; sourceTree = "<group>"; };
 		6348ABCF1EA8B57300D46B67 /* APWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APWaveView.m; sourceTree = "<group>"; };
 		635146661EEA2E98008FF153 /* 我的01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的01@2x.png"; sourceTree = "<group>"; };
@@ -498,12 +507,12 @@
 		635146A11EEA46EE008FF153 /* DVTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVTabBar.m; sourceTree = "<group>"; };
 		635146A21EEA46EE008FF153 /* DVPublishButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVPublishButton.h; sourceTree = "<group>"; };
 		635146A31EEA46EE008FF153 /* DVPublishButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVPublishButton.m; sourceTree = "<group>"; };
-		635146A71EEA4735008FF153 /* DWHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWHomeViewController.h; sourceTree = "<group>"; };
-		635146A81EEA4735008FF153 /* DWHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWHomeViewController.m; sourceTree = "<group>"; };
+		635146A71EEA4735008FF153 /* DWHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DWHomeViewController.h; path = "iOS(2)/DWHomeViewController.h"; sourceTree = "<group>"; };
+		635146A81EEA4735008FF153 /* DWHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DWHomeViewController.m; path = "iOS(2)/DWHomeViewController.m"; sourceTree = "<group>"; };
 		635146A91EEA4735008FF153 /* DWMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWMessageViewController.h; sourceTree = "<group>"; };
 		635146AA1EEA4735008FF153 /* DWMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWMessageViewController.m; sourceTree = "<group>"; };
-		635146AB1EEA4735008FF153 /* DWMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWMineViewController.h; sourceTree = "<group>"; };
-		635146AC1EEA4735008FF153 /* DWMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWMineViewController.m; sourceTree = "<group>"; };
+		635146AB1EEA4735008FF153 /* DWMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DWMineViewController.h; path = "iOS(2)/DWMineViewController.h"; sourceTree = "<group>"; };
+		635146AC1EEA4735008FF153 /* DWMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DWMineViewController.m; path = "iOS(2)/DWMineViewController.m"; sourceTree = "<group>"; };
 		635146AD1EEA4735008FF153 /* DWSameFityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWSameFityViewController.h; sourceTree = "<group>"; };
 		635146AE1EEA4735008FF153 /* DWSameFityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWSameFityViewController.m; sourceTree = "<group>"; };
 		6352342C1EE52D2900062507 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
@@ -517,6 +526,8 @@
 		63C840681EC2E4F900470A39 /* DVTelNotifyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVTelNotifyVC.m; sourceTree = "<group>"; };
 		63C8406A1EC2ED0800470A39 /* DVEmailNotifyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVEmailNotifyVC.h; sourceTree = "<group>"; };
 		63C8406B1EC2ED0800470A39 /* DVEmailNotifyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVEmailNotifyVC.m; sourceTree = "<group>"; };
+		63E0268F1EF9020300E7B4DB /* JHRotatoUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHRotatoUtil.h; sourceTree = "<group>"; };
+		63E026901EF9020300E7B4DB /* JHRotatoUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHRotatoUtil.m; sourceTree = "<group>"; };
 		63FFE3211ED6717000227E79 /* 去设置_英@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "去设置_英@2x.png"; sourceTree = "<group>"; };
 		63FFE3221ED6717000227E79 /* 去设置_英@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "去设置_英@3x.png"; sourceTree = "<group>"; };
 		63FFE3231ED6717000227E79 /* 去设置_中@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "去设置_中@2x.png"; sourceTree = "<group>"; };
@@ -898,8 +909,15 @@
 				63FFE3241ED6717000227E79 /* 去设置_中@3x.png */,
 				2C9DA6321E71260800892D9A /* AppDelegate.h */,
 				2C9DA6331E71260800892D9A /* AppDelegate.m */,
+				6300EB0E1EF3C76200CA7B01 /* iOS消息通知方式（俄语）.png */,
+				635146A71EEA4735008FF153 /* DWHomeViewController.h */,
+				635146A81EEA4735008FF153 /* DWHomeViewController.m */,
 				2C9DA6351E71260800892D9A /* ViewController.h */,
 				2C9DA6361E71260800892D9A /* ViewController.m */,
+				6300EB131EF7D9A700CA7B01 /* TestViewController.h */,
+				6300EB141EF7D9A700CA7B01 /* TestViewController.m */,
+				635146AB1EEA4735008FF153 /* DWMineViewController.h */,
+				635146AC1EEA4735008FF153 /* DWMineViewController.m */,
 				635146641EEA2E78008FF153 /* CustomTabbar */,
 				63B605ED1ECC4D4000CC3379 /* Befor */,
 				63C0D8441EC54D08004D103C /* Alarm */,
@@ -948,6 +966,8 @@
 		635146641EEA2E78008FF153 /* CustomTabbar */ = {
 			isa = PBXGroup;
 			children = (
+				6300EB101EF7B0B700CA7B01 /* DVNavigationController.h */,
+				6300EB111EF7B0B700CA7B01 /* DVNavigationController.m */,
 				6351469E1EEA46EE008FF153 /* DVTabBarController.h */,
 				6351469F1EEA46EE008FF153 /* DVTabBarController.m */,
 				635146A01EEA46EE008FF153 /* DVTabBar.h */,
@@ -962,12 +982,8 @@
 		635146651EEA2E98008FF153 /* iOS(2) */ = {
 			isa = PBXGroup;
 			children = (
-				635146A71EEA4735008FF153 /* DWHomeViewController.h */,
-				635146A81EEA4735008FF153 /* DWHomeViewController.m */,
 				635146A91EEA4735008FF153 /* DWMessageViewController.h */,
 				635146AA1EEA4735008FF153 /* DWMessageViewController.m */,
-				635146AB1EEA4735008FF153 /* DWMineViewController.h */,
-				635146AC1EEA4735008FF153 /* DWMineViewController.m */,
 				635146AD1EEA4735008FF153 /* DWSameFityViewController.h */,
 				635146AE1EEA4735008FF153 /* DWSameFityViewController.m */,
 				635146801EEA3017008FF153 /* 椭圆@2x.png */,
@@ -1024,6 +1040,8 @@
 		63C1BF721EA5F9BC007B0CDD /* APICommon */ = {
 			isa = PBXGroup;
 			children = (
+				63E0268F1EF9020300E7B4DB /* JHRotatoUtil.h */,
+				63E026901EF9020300E7B4DB /* JHRotatoUtil.m */,
 				63C1BF731EA5F9BC007B0CDD /* APICommon.h */,
 				63C1BF741EA5F9BC007B0CDD /* APICommon.mm */,
 			);
@@ -1159,6 +1177,7 @@
 				2C8A287F1E820ACF00E94F10 /* 202@2x.png in Resources */,
 				2C8A28461E820ACF00E94F10 /* 左01@2x.png in Resources */,
 				2C8A28481E820ACF00E94F10 /* 信号源01.png in Resources */,
+				6300EB0F1EF3C76200CA7B01 /* iOS消息通知方式（俄语）.png in Resources */,
 				2C8A28951E820ACF00E94F10 /* 902@3x.png in Resources */,
 				2C8A28B41E820ACF00E94F10 /* 左02.png in Resources */,
 				2C8A284B1E820ACF00E94F10 /* 菜单01.png in Resources */,
@@ -1385,16 +1404,19 @@
 				635234301EE52D2900062507 /* SVProgressHUD.m in Sources */,
 				63C1BF751EA5F9BC007B0CDD /* APICommon.mm in Sources */,
 				2C9DA6371E71260800892D9A /* ViewController.m in Sources */,
+				63E026911EF9020300E7B4DB /* JHRotatoUtil.m in Sources */,
 				635146B01EEA4735008FF153 /* DWMessageViewController.m in Sources */,
 				635146B11EEA4735008FF153 /* DWMineViewController.m in Sources */,
 				2C1815A01E7FD54000099AFF /* UIImage+ColorAtPixel.m in Sources */,
 				635146A61EEA46EE008FF153 /* DVPublishButton.m in Sources */,
+				6300EB151EF7D9A700CA7B01 /* TestViewController.m in Sources */,
 				6348ABD01EA8B57300D46B67 /* APWaveView.m in Sources */,
 				635146A41EEA46EE008FF153 /* DVTabBarController.m in Sources */,
 				2C1815A61E7FDAA900099AFF /* UIImage+MY.m in Sources */,
 				63C8406C1EC2ED0800470A39 /* DVEmailNotifyVC.m in Sources */,
 				2CC4A1221E89FA5B00AC1614 /* DVFactory.m in Sources */,
 				63C840691EC2E4F900470A39 /* DVTelNotifyVC.m in Sources */,
+				6300EB121EF7B0B700CA7B01 /* DVNavigationController.m in Sources */,
 				2CE0C6491E7A73DF007507F3 /* DVUtil.m in Sources */,
 				2C9DA6341E71260800892D9A /* AppDelegate.m in Sources */,
 				635146AF1EEA4735008FF153 /* DWHomeViewController.m in Sources */,

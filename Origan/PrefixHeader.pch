@@ -16,4 +16,8 @@
 #import "UIImage+MY.h"
 #import "DVFactory.h"
 
+#import "AppDelegate.h"
+#define  MYAppDelegate    [UIApplication sharedApplication].delegate
+#import "DVNavigationController.h"
+#import "JHRotatoUtil.h"
 #endif /* PrefixHeader_pch */

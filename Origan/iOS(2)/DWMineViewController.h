@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
 
 @interface DWMineViewController : UIViewController
+
+
+
+
 
 @end

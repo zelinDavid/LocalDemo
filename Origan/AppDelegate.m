@@ -19,14 +19,23 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
- 
-    
-    DVTabBarController *vc = [[DVTabBarController alloc]init];
-    self.window.rootViewController = vc;
+    DVTabBarController   *vc = [[DVTabBarController   alloc]init];
+//        ViewController   *vc = [[ViewController   alloc]init];
+
+     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
     
     return YES;
 }
+
+ 
+-(UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    if (_allowRotation) {
+        return UIInterfaceOrientationMaskAll;
+    }
+    return UIInterfaceOrientationMaskPortrait;
+}
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

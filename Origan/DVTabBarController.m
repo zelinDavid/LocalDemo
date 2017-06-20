@@ -1,7 +1,7 @@
  
 
 #import "DVTabBarController.h"
-
+#import "DVNavigationController.h"
 #import "DWHomeViewController.h"
 #import "DWMessageViewController.h"
 #import "DWMineViewController.h"
@@ -51,10 +51,13 @@
     _midBtn.selected = YES;
 }
 
+
 -(void)selectMideBtn {
     self.selectedIndex = 1;
-    
+
 }
+
+
 
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
     NSUInteger index = tabBarController.selectedIndex;
@@ -64,6 +67,39 @@
         _midBtn.selected = YES;
     }
 }
+
+//-(BOOL)shouldAutorotate {
+//    BOOL sss = [NSStringFromClass([self.presentedViewController class]) isEqualToString:@"DWMineViewController"];
+//    if (sss) {
+//        return YES;
+//    }
+//    return NO;
+//}
+//
+//-(UIInterfaceOrientationMask)supportedInterfaceOrientations {
+//    NSString *tem = NSStringFromClass([self.presentedViewController class]);
+//    BOOL sss = [tem isEqualToString:@"DWMineViewController"];
+//    if (sss) {
+//        return UIInterfaceOrientationMaskAll;
+//    }
+//    return UIInterfaceOrientationMaskPortrait;
+//    
+//}
+
+//
+//- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+//    if (_hhh) {
+//        return UIInterfaceOrientationMaskAll;
+//    }
+//    return UIInterfaceOrientationMaskPortrait;
+//}
+//
+//-(BOOL)shouldAutorotate {
+//    if (_hhh) {
+//        return YES;
+//    }
+//    return NO;
+//}
 
 
 #pragma mark -
@@ -80,6 +116,7 @@
 }
 
 
+
 /**
  *  tabBarItem 的选中和不选中文字属性
  */
@@ -89,23 +126,45 @@
  }
 
 
+
+
+
+
+
+-(UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
+    
+    return [self.selectedViewController preferredInterfaceOrientationForPresentation];
+}
+
+-(BOOL)shouldAutorotate {
+    return [self.selectedViewController shouldAutorotate];
+
+    
+}
+
+-(UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return [self.selectedViewController supportedInterfaceOrientations];
+
+}
+
+ 
 /**
  *  添加子控制器，我这里值添加了4个，没有占位自控制器
  */
 - (void)setUpChildViewController{
     
-    [self addOneChildViewController:[[UINavigationController alloc]initWithRootViewController:[[DWHomeViewController alloc]init]]
+    [self addOneChildViewController:[[DVNavigationController alloc]initWithRootViewController:[[DWHomeViewController alloc]init]]
                           WithTitle:@"消息"
                           imageName:@"消息中心01"
                   selectedImageName:@"消息中心03"];
     
     
-    UINavigationController *nav =    [[UINavigationController alloc]initWithRootViewController:[[DWMessageViewController alloc]init]];
+    DVNavigationController *nav =    [[DVNavigationController alloc]initWithRootViewController:[[DWMessageViewController alloc]init]];
     [self addChildViewController:nav];
  
 //    
 //    
-    [self addOneChildViewController:[[UINavigationController alloc]initWithRootViewController:[[DWMineViewController alloc]init]]
+    [self addOneChildViewController:[[DVNavigationController alloc]initWithRootViewController:[[DWMineViewController alloc]init]]
                           WithTitle:@"我的"
                           imageName:@"我的01"
                   selectedImageName:@"我的02"];
@@ -140,7 +199,10 @@
     // 设置文字属性
       [viewController.tabBarItem setTitleTextAttributes:normalAttrs forState:UIControlStateNormal];
     [viewController.tabBarItem setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
-
+    
+    
+    
+    
 }
 
 
