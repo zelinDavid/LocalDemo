@@ -56,9 +56,7 @@
 
 //
 -(UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
-    if ([NSStringFromClass([self.topViewController class]) isEqualToString:@"ViewController"]) {
-        return  UIInterfaceOrientationLandscapeRight|UIInterfaceOrientationLandscapeLeft;
-    }
+   
     return UIInterfaceOrientationPortrait;
 }
 
@@ -69,7 +67,12 @@
 //        return YES ;
 //    }
 //    return NO;
-    return YES;
+    
+//    if (_orietation) {
+//        return YES;
+//    }
+//    return NO;
+    return  YES;
 }
 
 -(UIInterfaceOrientationMask)supportedInterfaceOrientations {

@@ -78,23 +78,28 @@
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    ViewController *vvv =[[ViewController alloc]init];
-    [self addChildViewController:vvv];
-    [vvv didMoveToParentViewController:self];
-    vvv.view.frame =  self.view.bounds;
-    vvv.view.backgroundColor =  [UIColor blackColor];
-    vvv.view.alpha = 0;
-    [self.view addSubview:vvv.view];
-    _first = vvv;
-    _currentVC = _first;
-    vvv.view.hidden = NO;
-    DVNavigationController *nav = self.navigationController;
-    nav.orietation = 1;
-    [self.tabBarController.tabBar setHidden:YES];
+//    ViewController *vvv =[[ViewController alloc]init];
+//    [self addChildViewController:vvv];
+//    [vvv didMoveToParentViewController:self];
+//    vvv.view.frame =  self.view.bounds;
+//    vvv.view.backgroundColor =  [UIColor blackColor];
+//    vvv.view.alpha = 0;
+//    [self.view addSubview:vvv.view];
+//    _first = vvv;
+//    _currentVC = _first;
+//    vvv.view.hidden = NO;
+//    DVNavigationController *nav = self.navigationController;
+//    nav.orietation = 1;
+//    [self.tabBarController.tabBar setHidden:YES];
+//    
+//    [UIView animateWithDuration:0.2 animations:^{
+//        vvv.view.alpha = 1;
+//    }];
     
-    [UIView animateWithDuration:0.2 animations:^{
-        vvv.view.alpha = 1;
-    }];
+    ViewController *vc = [[ViewController alloc]init];
+    DVNavigationController *ssss = [[DVNavigationController alloc]initWithRootViewController:vc];
+    ssss.orietation = 1;
+    [self presentViewController:ssss animated:YES completion:nil];
     
 }
 

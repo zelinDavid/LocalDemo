@@ -38,11 +38,13 @@
 }
 
 -(void)fffff {
-    [self.view removeFromSuperview];
-    [JHRotatoUtil forceOrientation: UIInterfaceOrientationPortrait];
+//    [self.view removeFromSuperview];
+//    [JHRotatoUtil forceOrientation: UIInterfaceOrientationPortrait];
+//    _back = YES;
     _back = YES;
     DVNavigationController *nav  = self.navigationController;
     nav.orietation = 0;
+[JHRotatoUtil forceOrientation: UIInterfaceOrientationPortrait];
 
 }
 
@@ -74,8 +76,10 @@
             if (_back== NO) {
                 return ;
             }
-            [self.view removeFromSuperview];
-            [self didMoveToParentViewController:nil];
+//            [self.view removeFromSuperview];
+//            [self didMoveToParentViewController:nil];
+            [self dismissViewControllerAnimated:YES completion:nil];
+            
             
         });
     }
