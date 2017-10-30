@@ -11,7 +11,7 @@
 
 extern NSString const *test2;
 
-@interface ViewController : UIViewController
+@interface ViewController : DVSuperViewController
 
 
 

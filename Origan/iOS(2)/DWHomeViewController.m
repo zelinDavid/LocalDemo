@@ -9,12 +9,14 @@
 #import "DWHomeViewController.h"
 #import "ViewController.h"
 #import "TestViewController.h"
+#import "ShelterView.h"
 
 #import "AppDelegate.h"
 @interface DWHomeViewController()
 @property(nonatomic, strong) UIViewController *currentVC;
 @property(nonatomic, strong) UIViewController *first;
 @property(nonatomic, strong) UIViewController *second;
+@property(nonatomic, strong) ShelterView *shelterView;
 
 @end
 
@@ -22,88 +24,92 @@
 
 -(void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor yellowColor];
-    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
-    label.text = @"DWHomeViewController.h";
-    [self.view addSubview:label];
     
+    self.view.backgroundColor = [UIColor greenColor];
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [self initNV];
     
-//    ViewController *vvv =[[ViewController alloc]init];
-//    [self addChildViewController:vvv];
-//    [vvv didMoveToParentViewController:self];
-//    vvv.view.frame = CGRectMake(0, 0, 100, 200);
-//    vvv.view.backgroundColor =  [UIColor blackColor];
-//    [self.view addSubview:vvv.view];
-//    _first = vvv;
-//    _currentVC = _first;
-//    vvv.view.hidden = NO;
-//    
-//    TestViewController *test =[[TestViewController alloc]init];
-//    [self addChildViewController:test];
-//    [test didMoveToParentViewController:self];
-//    test.view.frame = CGRectMake(200, 200, 100, 200);
-//    test.view.backgroundColor =  [UIColor orangeColor];
-//    [self.view addSubview:test.view];
-//    _second = test;
-//    vvv.view.hidden = YES;
 }
 
 
-// 切换各个不同的控制器视图
-- (void)switchController:(UIViewController *)oldController newController:(UIViewController *)newController
+-(void)initNV
 {
-    /**
-     *  transitionFromViewController:toViewController:duration:options:animations:completion:
-     *  fromViewController      当前显示在父视图控制器中的子视图控制器
-     *  toViewController        将要显示的姿势图控制器
-     *  duration                动画时间(这个属性,old friend 了 O(∩_∩)O)
-     *  options                 动画效果(渐变,从下往上等等,具体查看API)
-     *  animations              转换过程中得动画
-     *  completion              转换完成
-     */
-//    [self addChildViewController:newController];
+    NSInteger cameraNum = 3;
+    NSInteger singleNum = 1;
+    NSLog(@"cameraNum:%ld %ld",(long)cameraNum,(long)singleNum);
     
-    [self transitionFromViewController:oldController toViewController:newController duration:0.5 options:UIViewAnimationOptionTransitionCrossDissolve animations:nil completion:^(BOOL finished) {
-        if (finished) {
-//            [newController didMoveToParentViewController:self];
-//            [oldController willMoveToParentViewController:nil];
-//            [oldController removeFromParentViewController];
-            self.currentVC = newController;
-            newController.view.hidden = NO;
-            oldController.view.hidden = YES;
-        }else{
-            self.currentVC = oldController;
-        }
-    }];
-}
-
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-//    ViewController *vvv =[[ViewController alloc]init];
-//    [self addChildViewController:vvv];
-//    [vvv didMoveToParentViewController:self];
-//    vvv.view.frame =  self.view.bounds;
-//    vvv.view.backgroundColor =  [UIColor blackColor];
-//    vvv.view.alpha = 0;
-//    [self.view addSubview:vvv.view];
-//    _first = vvv;
-//    _currentVC = _first;
-//    vvv.view.hidden = NO;
-//    DVNavigationController *nav = self.navigationController;
-//    nav.orietation = 1;
-//    [self.tabBarController.tabBar setHidden:YES];
-//    
-//    [UIView animateWithDuration:0.2 animations:^{
-//        vvv.view.alpha = 1;
-//    }];
+    UIButton *rightSet = [UIButton buttonWithType:UIButtonTypeCustom];
+    [rightSet setFrame:CGRectMake(0, 0, 26, 26)];
+    [rightSet setImage:[UIImage imageNamed:@"homePageAdd.png"] forState:UIControlStateNormal];
+    [rightSet addTarget:self action:@selector(rightButtonItemAction:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *buttonRight = [[UIBarButtonItem alloc] initWithCustomView:rightSet];
     
-    ViewController *vc = [[ViewController alloc]init];
-    DVNavigationController *ssss = [[DVNavigationController alloc]initWithRootViewController:vc];
-    ssss.orietation = 1;
-    [self presentViewController:ssss animated:YES completion:nil];
+    if (cameraNum > 1) {
+        UIButton *rightSet2 = [UIButton buttonWithType:UIButtonTypeCustom];
+        [rightSet2 setFrame:CGRectMake(0, 0, 20, 20)];
+        [rightSet2 setImage:[UIImage imageNamed:@"muscreen.png"] forState:UIControlStateNormal];
+        [rightSet2 addTarget:self action:@selector(pushtoplayVC) forControlEvents:UIControlEventTouchUpInside];
+        UIBarButtonItem *rightButtonItem2 = [[UIBarButtonItem alloc] initWithCustomView:rightSet2];
+        
+        UIBarButtonItem *space = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+        space.width = 15;
+        
+        self.navigationItem.rightBarButtonItems = @[buttonRight,space,rightButtonItem2];
+    } else {
+        self.navigationItem.rightBarButtonItems = @[buttonRight];
+    }
+    
+    
+    CGRect frame = [rightSet.superview convertRect:rightSet.frame toView:self.navigationController.view];
+    NSLog(@"%@",NSStringFromCGRect(frame));
+    
+    UIButton *shelterBtn = [[UIButton alloc]initWithFrame:frame];
+    [shelterBtn setImage:[UIImage imageNamed:@"homePageAdd"] forState:UIControlStateNormal];
+    [shelterBtn setBackgroundColor:[UIColor redColor]];
+    
+    [self.shelterView addSubview:shelterBtn];
+    
+    UIImageView *hand = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"手-"]];
+    hand.right  = shelterBtn.centerX;
+    hand.top = shelterBtn.bottom + FitFloat(20);
+    [self.shelterView addSubview:hand];
+    
+    [self.navigationController.view addSubview:self.shelterView];
+   
+    NSString *yellowStr = @"添加设备";
+    NSString *hereStr = @"点击这里哦";
+    NSString *finalStr = [NSString stringWithFormat:@"\"%@\" %@",yellowStr,hereStr];
+    NSMutableAttributedString *attributeStr = [[NSMutableAttributedString alloc]initWithString:finalStr attributes:@{NSFontAttributeName:FitFont(17),NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    [attributeStr setAttributes:@{NSForegroundColorAttributeName:RGBFromHex(0xfffc08),NSFontAttributeName:FitFont(17)} range:NSMakeRange([finalStr rangeOfString:yellowStr].location-1, yellowStr.length +2)];
+    
+    CGRect bounds =  [attributeStr boundingRectWithSize:CGSizeMake(MAXFLOAT, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
+    UILabel *tipLabel = [[UILabel alloc]initWithFrame:bounds];
+    tipLabel.top = hand.bottom + 20;
+    tipLabel.right = hand.right;
+    tipLabel.attributedText = attributeStr;
+    [self.shelterView addSubview:tipLabel];
+    
+    UILabel *knowLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, FitFloat(370), 200, 25)];
+    knowLabel.centerX = UI_CenterX;
+    knowLabel.textColor = [UIColor whiteColor];
+    knowLabel.textAlignment = NSTextAlignmentCenter;
+    knowLabel.font = FitFont(17);
+    knowLabel.text = @"wozhid";
+    [self.shelterView addSubview:knowLabel];
+    
     
 }
 
  
-
+#pragma mark -懒加载
+-(ShelterView *)shelterView {
+    if (_shelterView == nil) {
+        _shelterView = [[ShelterView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+        
+    }
+    return _shelterView;
+}
 
 @end

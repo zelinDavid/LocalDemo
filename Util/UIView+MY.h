@@ -28,6 +28,7 @@ typedef enum : NSUInteger {
 
 - (void)setTop:(CGFloat)top;
 - (void)setLeft:(CGFloat)left;
+-(void)setRight:(CGFloat)right;
 
 - (void)setWidth:(CGFloat)width;
 - (void)setHeight:(CGFloat)height;

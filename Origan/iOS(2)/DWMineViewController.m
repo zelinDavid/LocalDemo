@@ -11,47 +11,48 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 
-@implementation DWMineViewController
+@interface DWMineViewController ()<UIAlertViewDelegate>
+
+@end
+@implementation DWMineViewController {
+    UIAlertController *alert;
+    UIAlertView *alertView;
+}
 -(void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor grayColor];
-    UIView *tem = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
-    tem.backgroundColor = [UIColor greenColor ];
-    [self.view addSubview:tem];
+   
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidBecomeActive)
+                                                 name:UIApplicationWillEnterForegroundNotification object:nil]; //监听是否重新进入程序.
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(didEnterBackground)
+                                                 name:UIApplicationDidEnterBackgroundNotification
+                                               object:nil];
 
-    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
-    label.text = @"DWMineViewController.h";
-    [self.view addSubview:label];
 }
 
 
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    UIAlertView *myalert = [[UIAlertView alloc]initWithTitle:@"ddd" message:@"dddd"
+                                                  delegate:self cancelButtonTitle:@"dddd" otherButtonTitles:nil, nil];
+    [myalert show];
+    alertView = myalert;
 
-//-(void)viewWillAppear:(BOOL)animated {
-//    [super viewWillAppear:animated];
-//    AppDelegate *ap = [UIApplication sharedApplication].delegate;
-//    ap.allowRotation = YES;
-//}
-//
-//-(void)viewWillDisappear:(BOOL)animated {
-//    [super viewWillDisappear:animated];
-//    AppDelegate *ap = [UIApplication sharedApplication].delegate;
-//    ap.allowRotation = NO;
-//    
-//}
-
-
--(BOOL)shouldAutorotate {
-    return YES;
 }
-
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    
-    ViewController *vc = [[ViewController alloc]init];
-    [self.navigationController pushViewController:vc  animated:YES];
-
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     
 }
 
+-(void)applicationDidBecomeActive {
+    [self.navigationController popViewControllerAnimated:NO];
+}
+
+-(void)didEnterBackground {
+//    [alert dismissViewControllerAnimated:YES completion:nil];
+    [alertView dismissWithClickedButtonIndex:0 animated:0];
+    
+    
+}
 
 
 @end

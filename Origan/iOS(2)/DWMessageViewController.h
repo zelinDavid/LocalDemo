@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DWMessageViewController : UIViewController
+@interface DWMessageViewController :   DVSuperViewController
 
 @end

@@ -45,22 +45,7 @@
     
     self.publishButton.center = CGPointMake(barWidth * 0.5, barHeight * 0.3);
     
-//    for (UIView *view in self.subviews) {
-//        
-//        NSString *viewClass = NSStringFromClass([view class]);
-//        if (![viewClass isEqualToString:@"UITabBarButton"]) continue;
-//
-//        CGFloat buttonX = buttonIndex * buttonW;
-//        if (buttonIndex >= 1) {  
-//            buttonX += buttonW;
-//        }
-//        
-//        view.frame = CGRectMake(buttonX, buttonY, buttonW, buttonH);
-//        
-//        
-//        buttonIndex ++;
-//        
-//    }
+ 
  
 }
 

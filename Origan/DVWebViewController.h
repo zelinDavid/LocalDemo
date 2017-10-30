@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DVWebViewController : UIViewController
+@interface DVWebViewController :   DVSuperViewController
 -(instancetype)initWithUrlString:(NSString *)urlStr ;
 @end

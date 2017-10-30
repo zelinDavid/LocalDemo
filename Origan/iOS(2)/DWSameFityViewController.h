@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DWSameFityViewController : UIViewController
+@interface DWSameFityViewController :   DVSuperViewController
 
 @end

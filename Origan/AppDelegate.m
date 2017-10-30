@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "DVTabBarController.h"
+//#import "ffffViewController.h"
+//#import "ResetCameraViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -19,10 +21,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
-    DVTabBarController   *vc = [[DVTabBarController   alloc]init];
-//        ViewController   *vc = [[ViewController   alloc]init];
-
-     self.window.rootViewController = vc;
+//    DVTabBarController   *vc = [[DVTabBarController   alloc]init];
+        ViewController   *vc = [[ViewController   alloc]init];
+    
+//    ResetCameraViewController *vc = [[ResetCameraViewController alloc]initWithNibName:@"ResetCameraViewController" bundle:nil];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
+    
+     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     
     return YES;

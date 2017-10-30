@@ -20,4 +20,6 @@
 #define  MYAppDelegate    [UIApplication sharedApplication].delegate
 #import "DVNavigationController.h"
 #import "JHRotatoUtil.h"
+#import "DVSuperViewController.h"
+
 #endif /* PrefixHeader_pch */

@@ -108,13 +108,14 @@ inline UIFont *FitFont(CGFloat font)
 }
 
 
-+(void)showAlertWithTitle:(NSString *)title{
++(UIAlertController *)showAlertWithTitle:(NSString *)title{
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:title preferredStyle:UIAlertControllerStyleAlert];
     
     UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
     }];
     [alertController addAction:sureAction];
     [self showAlertController:alertController];
+    return alertController;
 }
 
 +(void)showAlertWithTitle:(NSString *)title cancel:(void(^)())cancel ok:(void(^)())ok{

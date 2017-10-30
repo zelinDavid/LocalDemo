@@ -27,7 +27,7 @@ FOUNDATION_EXTERN UIFont *FitFont(CGFloat font);
 
 +(void)showAlertController:(UIAlertController *)alertController;
 
-+(void)showAlertWithTitle:(NSString *)title;
++(UIAlertController *)showAlertWithTitle:(NSString *)title;
 
 +(void)showAlertWithTitle:(NSString *)title cancel:(void(^)())cancel ok:(void(^)())ok;
 

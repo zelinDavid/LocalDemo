@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DVEmailNotifyVC : UIViewController
+@interface DVEmailNotifyVC :   DVSuperViewController
 
 @end

@@ -37,13 +37,12 @@
     // 处理tabBar，使用自定义 tabBar 添加 发布按钮
     [self setUpTabBar];
     
-    [[UITabBar appearance] setBackgroundImage:[self imageWithColor:RGBFromHex(0xf2f2f2)]];
-    
+    [[UITabBar appearance] setBackgroundImage:[self imageWithColor:RGBAFromHex(0xf2f2f2, 0.97)]];
+ 
     //去除 TabBar 自带的顶部阴影
     [[UITabBar appearance] setShadowImage:[[UIImage alloc] init]];
     
-    //设置导航控制器颜色为黄色
-    [[UINavigationBar appearance] setBackgroundImage:[self imageWithColor:DVColor(253, 218, 68)] forBarMetrics:UIBarMetricsDefault];
+ 
 
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(selectMideBtn) name:@"ssss" object:nil];
     

@@ -6,13 +6,17 @@
     }
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "8bcc2bd3-09a8-cf4f-a5c2-54eec4bb13ab++398" : 0,
-    "1DE63330B19BEC2B84B369DC9389E5EA47B9A979" : 0
+    "1DE63330B19BEC2B84B369DC9389E5EA47B9A979" : 0,
+    "51B210D0D41486D3ADD6940D57E4480BBD4DE4C5" : 9223372036854775807,
+    "E084C86B03F81D63323C9E7510697EA528A758C7" : 9223372036854775807,
+    "8bcc2bd3-09a8-cf4f-a5c2-54eec4bb13ab++398" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6BC0BECD-79A0-4E5E-9E1D-B1A360A7EF06",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "8bcc2bd3-09a8-cf4f-a5c2-54eec4bb13ab++398" : "LocalDemo\/Util\/",
-    "1DE63330B19BEC2B84B369DC9389E5EA47B9A979" : "LocalDemo\/"
+    "1DE63330B19BEC2B84B369DC9389E5EA47B9A979" : "LocalDemo\/",
+    "51B210D0D41486D3ADD6940D57E4480BBD4DE4C5" : "..\/reactestttt",
+    "E084C86B03F81D63323C9E7510697EA528A758C7" : "..\/reactestttt\/Carthage\/Checkouts\/xcconfigs",
+    "8bcc2bd3-09a8-cf4f-a5c2-54eec4bb13ab++398" : "LocalDemo\/Util\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "Origan",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -24,9 +28,19 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1DE63330B19BEC2B84B369DC9389E5EA47B9A979"
     },
     {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zelinDavid\/ReactiveObjC.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "51B210D0D41486D3ADD6940D57E4480BBD4DE4C5"
+    },
+    {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.253.2\/svn\/ios_eye4",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8bcc2bd3-09a8-cf4f-a5c2-54eec4bb13ab++398"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jspahrsummers\/xcconfigs.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E084C86B03F81D63323C9E7510697EA528A758C7"
     }
   ]
 }

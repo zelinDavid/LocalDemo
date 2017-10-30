@@ -55,6 +55,11 @@
     return self.frame.origin.x + self.frame.size.width;
 }
 
+-(void)setRight:(CGFloat)right {
+    CGRect frame = self.frame;
+    frame.origin.x = right - self.width;
+    self.frame = frame;
+}
 
 
 - (CGFloat)bottom {

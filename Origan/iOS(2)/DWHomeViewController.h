@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DWHomeViewController : UIViewController
+@interface DWHomeViewController :   DVSuperViewController
 
 @end

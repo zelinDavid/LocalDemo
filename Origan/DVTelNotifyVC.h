@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DVTelNotifyVC : UIViewController
+@interface DVTelNotifyVC :   DVSuperViewController
 
 @end
